@@ -1,0 +1,16 @@
+[*] Repeated-loop predictor: query at N, resolution at N+2
+[dumpfile] "reports/waveforms/two_bit.vcd"
+[timestart] 0
+@28
+tb_trace.clk
+tb_trace.query_valid
+tb_trace.update_valid
+tb_trace.predicted_taken
+tb_trace.btb_hit
+tb_trace.flush
+@22
+tb_trace.query_pc
+tb_trace.query_state
+tb_trace.predicted_next_pc
+tb_trace.saved_next
+tb_trace.redirect_pc

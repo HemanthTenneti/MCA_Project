@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "rtl_output": [
+    "VCD info: dumpfile reports/waveforms/unit.vcd opened for output.\nPASS unit checks=90\ntb/tb_unit.v:117: $finish called at 998000 (1ps)",
+    "PASS timing wrapper transactions=3\ntb/tb_timing_top.v:49: $finish called at 6085000 (1ps)"
+  ],
+  "python_tests": 5
+}

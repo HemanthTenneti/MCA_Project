@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "comparisons": 7248,
+  "workloads": 10,
+  "strategies": 3,
+  "seed": 20261018,
+  "manifest_sha256": "18fa7a7280df4924853905fd9cad75c214873e25e6af88238d3d5c89045d9d88",
+  "base_cpi": 1.0,
+  "recovery_penalty": 2,
+  "tools": {
+    "iverilog": "Icarus Verilog version 13.0 (stable) (v13_0)",
+    "vvp": "Icarus Verilog runtime version 13.0 (stable) (v13_0)"
+  }
+}
