@@ -1,0 +1,2216 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 21.0.0.21000334)
+
+-- Running command `read_verilog rtl/branch_predictor.v rtl/branch_recovery.v rtl/branch_target_buffer.v rtl/direction_predictor.v synth/timing_top.v; chparam -set MODE 1 -set FIXTURE_ONLY 0 timing_top; synth_ice40 -top timing_top -json /Users/hemanth10etii/Coding/MCA_Project/build/synthesis/one_bit.json; check -assert; tee -o /Users/hemanth10etii/Coding/MCA_Project/reports/synthesis/one_bit_cells.json stat -json; write_verilog -noattr -noexpr /Users/hemanth10etii/Coding/MCA_Project/build/synthesis/one_bit.v' --
+
+1. Executing Verilog-2005 frontend: rtl/branch_predictor.v
+Parsing Verilog input from `rtl/branch_predictor.v' to AST representation.
+Generating RTLIL representation for module `\branch_predictor'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: rtl/branch_recovery.v
+Parsing Verilog input from `rtl/branch_recovery.v' to AST representation.
+Generating RTLIL representation for module `\branch_recovery'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: rtl/branch_target_buffer.v
+Parsing Verilog input from `rtl/branch_target_buffer.v' to AST representation.
+Generating RTLIL representation for module `\branch_target_buffer'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: rtl/direction_predictor.v
+Parsing Verilog input from `rtl/direction_predictor.v' to AST representation.
+Generating RTLIL representation for module `\direction_predictor'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: synth/timing_top.v
+Parsing Verilog input from `synth/timing_top.v' to AST representation.
+Generating RTLIL representation for module `\timing_top'.
+Successfully finished Verilog frontend.
+Parameter \MODE = 1
+Parameter \FIXTURE_ONLY = 0
+
+6. Executing AST frontend in derive mode using pre-parsed AST for module `\timing_top'.
+Parameter \MODE = 1
+Parameter \FIXTURE_ONLY = 0
+Generating RTLIL representation for module `$paramod$b86f3164a7b078d57fe1b37694e1b87eb9b4bb4a\timing_top'.
+
+7. Executing SYNTH_ICE40 pass.
+
+7.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/cells_sim.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\SB_IO'.
+Generating RTLIL representation for module `\SB_GB_IO'.
+Generating RTLIL representation for module `\SB_GB'.
+Generating RTLIL representation for module `\SB_LUT4'.
+Generating RTLIL representation for module `\SB_CARRY'.
+Generating RTLIL representation for module `\SB_DFF'.
+Generating RTLIL representation for module `\SB_DFFE'.
+Generating RTLIL representation for module `\SB_DFFSR'.
+Generating RTLIL representation for module `\SB_DFFR'.
+Generating RTLIL representation for module `\SB_DFFSS'.
+Generating RTLIL representation for module `\SB_DFFS'.
+Generating RTLIL representation for module `\SB_DFFESR'.
+Generating RTLIL representation for module `\SB_DFFER'.
+Generating RTLIL representation for module `\SB_DFFESS'.
+Generating RTLIL representation for module `\SB_DFFES'.
+Generating RTLIL representation for module `\SB_DFFN'.
+Generating RTLIL representation for module `\SB_DFFNE'.
+Generating RTLIL representation for module `\SB_DFFNSR'.
+Generating RTLIL representation for module `\SB_DFFNR'.
+Generating RTLIL representation for module `\SB_DFFNSS'.
+Generating RTLIL representation for module `\SB_DFFNS'.
+Generating RTLIL representation for module `\SB_DFFNESR'.
+Generating RTLIL representation for module `\SB_DFFNER'.
+Generating RTLIL representation for module `\SB_DFFNESS'.
+Generating RTLIL representation for module `\SB_DFFNES'.
+Generating RTLIL representation for module `\SB_RAM40_4K'.
+Generating RTLIL representation for module `\SB_RAM40_4KNR'.
+Generating RTLIL representation for module `\SB_RAM40_4KNW'.
+Generating RTLIL representation for module `\SB_RAM40_4KNRNW'.
+Generating RTLIL representation for module `\ICESTORM_LC'.
+Generating RTLIL representation for module `\SB_PLL40_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2F_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_2F_PAD'.
+Generating RTLIL representation for module `\SB_WARMBOOT'.
+Generating RTLIL representation for module `\SB_SPRAM256KA'.
+Generating RTLIL representation for module `\SB_HFOSC'.
+Generating RTLIL representation for module `\SB_LFOSC'.
+Generating RTLIL representation for module `\SB_RGBA_DRV'.
+Generating RTLIL representation for module `\SB_LED_DRV_CUR'.
+Generating RTLIL representation for module `\SB_RGB_DRV'.
+Generating RTLIL representation for module `\SB_I2C'.
+Generating RTLIL representation for module `\SB_SPI'.
+Generating RTLIL representation for module `\SB_LEDDA_IP'.
+Generating RTLIL representation for module `\SB_FILTER_50NS'.
+Generating RTLIL representation for module `\SB_IO_I3C'.
+Generating RTLIL representation for module `\SB_IO_OD'.
+Generating RTLIL representation for module `\SB_MAC16'.
+Generating RTLIL representation for module `\ICESTORM_RAM'.
+Successfully finished Verilog frontend.
+
+7.2. Executing HIERARCHY pass (managing design hierarchy).
+
+7.2.1. Analyzing design hierarchy..
+Top module:  \timing_top
+Used module:     \branch_predictor
+Used module:         \branch_target_buffer
+Used module:         \direction_predictor
+Used module:     \branch_recovery
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 4
+
+7.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\branch_target_buffer'.
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 4
+Generating RTLIL representation for module `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer'.
+Parameter \MODE = 2
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 6
+
+7.2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\direction_predictor'.
+Parameter \MODE = 2
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 6
+Generating RTLIL representation for module `$paramod$f3fd1ab85b2bcc02ba9e0d6b16c4a7482077dff2\direction_predictor'.
+Parameter \MODE = 1
+
+7.2.4. Executing AST frontend in derive mode using pre-parsed AST for module `\branch_predictor'.
+Parameter \MODE = 1
+Generating RTLIL representation for module `$paramod\branch_predictor\MODE=s32'00000000000000000000000000000001'.
+
+7.2.5. Analyzing design hierarchy..
+Top module:  \timing_top
+Used module:     $paramod\branch_predictor\MODE=s32'00000000000000000000000000000001
+Used module:         \branch_target_buffer
+Used module:         \direction_predictor
+Used module:     \branch_recovery
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 4
+Found cached RTLIL representation for module `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer'.
+Parameter \MODE = 1
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 6
+
+7.2.6. Executing AST frontend in derive mode using pre-parsed AST for module `\direction_predictor'.
+Parameter \MODE = 1
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 6
+Generating RTLIL representation for module `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor'.
+
+7.2.7. Analyzing design hierarchy..
+Top module:  \timing_top
+Used module:     $paramod\branch_predictor\MODE=s32'00000000000000000000000000000001
+Used module:         $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer
+Used module:         $paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor
+Used module:     \branch_recovery
+
+7.2.8. Analyzing design hierarchy..
+Top module:  \timing_top
+Used module:     $paramod\branch_predictor\MODE=s32'00000000000000000000000000000001
+Used module:         $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer
+Used module:         $paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor
+Used module:     \branch_recovery
+Removing unused module `$paramod$f3fd1ab85b2bcc02ba9e0d6b16c4a7482077dff2\direction_predictor'.
+Removing unused module `\direction_predictor'.
+Removing unused module `\branch_target_buffer'.
+Removing unused module `\branch_predictor'.
+Removed 4 unused modules.
+
+7.3. Executing PROC pass (convert processes to netlists).
+
+7.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$synth/timing_top.v:42$297 in module timing_top.
+Marked 2 switch rules as full_case in process $proc$rtl/direction_predictor.v:30$1034 in module $paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.
+Marked 2 switch rules as full_case in process $proc$rtl/branch_target_buffer.v:24$691 in module $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.
+Removed a total of 0 dead cases.
+
+7.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 79 assignments to connections.
+
+7.3.4. Executing PROC_INIT pass (extract init attributes).
+
+7.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+7.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~7 debug messages>
+
+7.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\timing_top.$proc$synth/timing_top.v:42$297'.
+     1/4: $0\response[68:0]
+     2/4: $0\transaction_valid[0:0]
+     3/4: $0\request[130:0]
+     4/4: $0\input_shift[130:0]
+Creating decoders for process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:29$1175'.
+Creating decoders for process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:28$1172'.
+Creating decoders for process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+     1/71: $2$memwr$\dynamic_table.history$rtl/direction_predictor.v:33$1033_EN[0:0]$1171
+     2/71: $2$memwr$\dynamic_table.history$rtl/direction_predictor.v:33$1033_DATA[0:0]$1170
+     3/71: $2$memwr$\dynamic_table.history$rtl/direction_predictor.v:33$1033_ADDR[5:0]$1169
+     4/71: $1\dynamic_table.i[31:0]
+     5/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1032_EN[0:0]$1165
+     6/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1031_EN[0:0]$1164
+     7/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1030_EN[0:0]$1163
+     8/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1029_EN[0:0]$1162
+     9/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1028_EN[0:0]$1161
+    10/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1027_EN[0:0]$1160
+    11/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1026_EN[0:0]$1159
+    12/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1025_EN[0:0]$1158
+    13/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1024_EN[0:0]$1157
+    14/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1023_EN[0:0]$1156
+    15/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1022_EN[0:0]$1155
+    16/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1021_EN[0:0]$1154
+    17/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1020_EN[0:0]$1153
+    18/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1019_EN[0:0]$1152
+    19/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1018_EN[0:0]$1151
+    20/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1017_EN[0:0]$1150
+    21/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1016_EN[0:0]$1149
+    22/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1015_EN[0:0]$1148
+    23/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1014_EN[0:0]$1147
+    24/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1013_EN[0:0]$1146
+    25/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1012_EN[0:0]$1145
+    26/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1011_EN[0:0]$1144
+    27/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1010_EN[0:0]$1143
+    28/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1009_EN[0:0]$1142
+    29/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1008_EN[0:0]$1141
+    30/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1007_EN[0:0]$1140
+    31/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1006_EN[0:0]$1139
+    32/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1005_EN[0:0]$1138
+    33/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1004_EN[0:0]$1137
+    34/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1003_EN[0:0]$1136
+    35/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1002_EN[0:0]$1135
+    36/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1001_EN[0:0]$1134
+    37/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1000_EN[0:0]$1133
+    38/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$999_EN[0:0]$1132
+    39/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$998_EN[0:0]$1131
+    40/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$997_EN[0:0]$1130
+    41/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$996_EN[0:0]$1129
+    42/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$995_EN[0:0]$1128
+    43/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$994_EN[0:0]$1127
+    44/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$993_EN[0:0]$1126
+    45/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$992_EN[0:0]$1125
+    46/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$991_EN[0:0]$1124
+    47/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$990_EN[0:0]$1123
+    48/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$989_EN[0:0]$1122
+    49/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$988_EN[0:0]$1121
+    50/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$987_EN[0:0]$1120
+    51/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$986_EN[0:0]$1119
+    52/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$985_EN[0:0]$1118
+    53/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$984_EN[0:0]$1117
+    54/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$983_EN[0:0]$1116
+    55/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$982_EN[0:0]$1115
+    56/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$981_EN[0:0]$1114
+    57/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$980_EN[0:0]$1113
+    58/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$979_EN[0:0]$1112
+    59/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$978_EN[0:0]$1111
+    60/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$977_EN[0:0]$1110
+    61/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$976_EN[0:0]$1109
+    62/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$975_EN[0:0]$1108
+    63/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$974_EN[0:0]$1107
+    64/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$973_EN[0:0]$1106
+    65/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$972_EN[0:0]$1105
+    66/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$971_EN[0:0]$1104
+    67/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$970_EN[0:0]$1103
+    68/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$969_EN[0:0]$1102
+    69/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:33$1033_EN[0:0]$1168
+    70/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:33$1033_DATA[0:0]$1167
+    71/71: $1$memwr$\dynamic_table.history$rtl/direction_predictor.v:33$1033_ADDR[5:0]$1166
+Creating decoders for process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+     1/16: $2$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$714
+     2/16: $2$memwr$\targets$rtl/branch_target_buffer.v:29$683_DATA[31:0]$713
+     3/16: $2$memwr$\targets$rtl/branch_target_buffer.v:29$683_ADDR[3:0]$712
+     4/16: $2$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$711
+     5/16: $2$memwr$\tags$rtl/branch_target_buffer.v:28$682_DATA[25:0]$710
+     6/16: $2$memwr$\tags$rtl/branch_target_buffer.v:28$682_ADDR[3:0]$709
+     7/16: $2$lookahead\valid$690[15:0]$715
+     8/16: $2$bitselwrite$pos$rtl/branch_target_buffer.v:27$681[3:0]$708
+     9/16: $1$lookahead\valid$690[15:0]$707
+    10/16: $1$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$706
+    11/16: $1$memwr$\targets$rtl/branch_target_buffer.v:29$683_DATA[31:0]$705
+    12/16: $1$memwr$\targets$rtl/branch_target_buffer.v:29$683_ADDR[3:0]$704
+    13/16: $1$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$703
+    14/16: $1$memwr$\tags$rtl/branch_target_buffer.v:28$682_DATA[25:0]$702
+    15/16: $1$memwr$\tags$rtl/branch_target_buffer.v:28$682_ADDR[3:0]$701
+    16/16: $1$bitselwrite$pos$rtl/branch_target_buffer.v:27$681[3:0]$700
+
+7.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$mem2bits$\dynamic_table.history$rtl/direction_predictor.v:29$968' from process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:29$1175'.
+No latch inferred for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$mem2bits$\dynamic_table.history$rtl/direction_predictor.v:28$967' from process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:28$1172'.
+
+7.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\timing_top.\input_shift' using process `\timing_top.$proc$synth/timing_top.v:42$297'.
+  created $dff cell `$procdff$1493' with positive edge clock.
+Creating register for signal `\timing_top.\request' using process `\timing_top.$proc$synth/timing_top.v:42$297'.
+  created $dff cell `$procdff$1494' with positive edge clock.
+Creating register for signal `\timing_top.\transaction_valid' using process `\timing_top.$proc$synth/timing_top.v:42$297'.
+  created $dff cell `$procdff$1495' with positive edge clock.
+Creating register for signal `\timing_top.\response' using process `\timing_top.$proc$synth/timing_top.v:42$297'.
+  created $dff cell `$procdff$1496' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.\dynamic_table.i' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1497' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$969_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1498' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$970_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1499' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$971_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1500' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$972_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1501' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$973_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1502' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$974_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1503' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$975_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1504' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$976_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1505' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$977_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1506' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$978_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1507' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$979_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1508' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$980_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1509' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$981_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1510' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$982_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1511' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$983_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1512' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$984_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1513' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$985_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1514' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$986_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1515' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$987_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1516' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$988_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1517' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$989_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1518' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$990_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1519' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$991_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1520' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$992_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1521' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$993_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1522' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$994_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1523' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$995_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1524' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$996_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1525' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$997_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1526' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$998_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1527' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$999_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1528' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1000_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1529' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1001_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1530' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1002_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1531' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1003_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1532' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1004_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1533' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1005_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1534' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1006_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1535' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1007_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1536' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1008_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1537' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1009_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1538' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1010_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1539' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1011_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1540' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1012_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1541' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1013_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1542' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1014_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1543' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1015_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1544' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1016_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1545' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1017_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1546' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1018_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1547' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1019_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1548' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1020_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1549' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1021_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1550' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1022_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1551' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1023_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1552' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1024_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1553' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1025_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1554' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1026_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1555' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1027_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1556' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1028_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1557' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1029_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1558' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1030_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1559' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1031_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1560' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:32$1032_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1561' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:33$1033_ADDR' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1562' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:33$1033_DATA' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1563' with positive edge clock.
+Creating register for signal `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$memwr$\dynamic_table.history$rtl/direction_predictor.v:33$1033_EN' using process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+  created $dff cell `$procdff$1564' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.\valid' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1565' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$bitselwrite$pos$rtl/branch_target_buffer.v:27$681' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1566' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\tags$rtl/branch_target_buffer.v:28$682_ADDR' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1567' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\tags$rtl/branch_target_buffer.v:28$682_DATA' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1568' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1569' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\targets$rtl/branch_target_buffer.v:29$683_ADDR' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1570' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\targets$rtl/branch_target_buffer.v:29$683_DATA' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1571' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1572' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$lookahead\valid$690' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1573' with positive edge clock.
+
+7.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+7.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 3 empty switches in `\timing_top.$proc$synth/timing_top.v:42$297'.
+Removing empty process `timing_top.$proc$synth/timing_top.v:42$297'.
+Removing empty process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:29$1175'.
+Removing empty process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:28$1172'.
+Found and cleaned up 2 empty switches in `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+Removing empty process `$paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.$proc$rtl/direction_predictor.v:30$1034'.
+Found and cleaned up 2 empty switches in `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+Removing empty process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+Cleaned up 7 empty switches.
+
+7.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+Optimizing module $paramod\branch_predictor\MODE=s32'00000000000000000000000000000001.
+Optimizing module $paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.
+Optimizing module branch_recovery.
+Optimizing module $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.
+
+7.4. Executing CHECK pass (checking for obvious problems).
+Checking module timing_top...
+Checking module $paramod\branch_predictor\MODE=s32'00000000000000000000000000000001...
+Checking module $paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor...
+Checking module branch_recovery...
+Checking module $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer...
+Found and reported 0 problems.
+
+7.5. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\branch_predictor\MODE=s32'00000000000000000000000000000001.
+Deleting now unused module $paramod$ffef1098de506aa9c49e35a34cfbe5f0923857cc\direction_predictor.
+Deleting now unused module branch_recovery.
+Deleting now unused module $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.
+<suppressed ~4 debug messages>
+
+7.6. Executing TRIBUF pass.
+
+7.7. Executing DEMINOUT pass (demote inout ports to input or output).
+
+7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.9. Executing CHECK pass (checking for obvious problems).
+Checking module timing_top...
+Found and reported 0 problems.
+
+7.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 80 unused cells and 370 unused wires.
+<suppressed ~82 debug messages>
+
+7.11. Executing OPT pass (performing simple optimizations).
+
+7.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 205 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 202 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 201 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~12 debug messages>
+Removed a total of 4 cells.
+
+7.11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\direction_unit.$procmux$1215.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\direction_unit.$procmux$1209.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\direction_unit.$procmux$1203.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\target_unit.$procmux$1461.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\target_unit.$procmux$1455.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\target_unit.$procmux$1449.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\target_unit.$procmux$1443.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\target_unit.$procmux$1437.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\target_unit.$procmux$1431.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\target_unit.$procmux$1425.
+Removed 10 multiplexer ports.
+<suppressed ~183 debug messages>
+
+7.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+    Consolidated identical input bits for $mux cell $flatten\full_design.predictor.\target_unit.$procmux$1440:
+      Old ports: A=26'00000000000000000000000000, B=26'11111111111111111111111111, Y=$flatten\full_design.predictor.\target_unit.$procmux$1440_Y
+      New ports: A=1'0, B=1'1, Y=$flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0]
+      New connections: $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [25:1] = { $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0] }
+    Consolidated identical input bits for $mux cell $flatten\full_design.predictor.\target_unit.$procmux$1422:
+      Old ports: A=0, B=32'11111111111111111111111111111111, Y=$flatten\full_design.predictor.\target_unit.$procmux$1422_Y
+      New ports: A=1'0, B=1'1, Y=$flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0]
+      New connections: $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [31:1] = { $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0] }
+  Optimizing cells in module \timing_top.
+    Consolidated identical input bits for $mux cell $flatten\full_design.predictor.\target_unit.$procmux$1482:
+      Old ports: A=$flatten\full_design.predictor.\target_unit.$2$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$711, B=26'00000000000000000000000000, Y=$flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695
+      New ports: A=$flatten\full_design.predictor.\target_unit.$procmux$1440_Y [0], B=1'0, Y=$flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0]
+      New connections: $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [25:1] = { $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] }
+    Consolidated identical input bits for $mux cell $flatten\full_design.predictor.\target_unit.$procmux$1473:
+      Old ports: A=$flatten\full_design.predictor.\target_unit.$2$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$714, B=0, Y=$flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698
+      New ports: A=$flatten\full_design.predictor.\target_unit.$procmux$1422_Y [0], B=1'0, Y=$flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0]
+      New connections: $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [31:1] = { $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$698 [0] }
+  Optimizing cells in module \timing_top.
+Performed a total of 4 changes.
+
+7.11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 191 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 126 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 124 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~201 debug messages>
+Removed a total of 67 cells.
+
+7.11.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 0 unused cells and 79 unused wires.
+<suppressed ~1 debug messages>
+
+7.11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.11.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~41 debug messages>
+
+7.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.11.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 124 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.11.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.11.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.11.16. Finished fast OPT passes. (There is nothing left to do.)
+
+7.12. Executing FSM pass (extract and optimize FSM).
+
+7.12.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+7.12.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+7.12.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+7.12.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.12.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+7.12.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+7.12.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+7.12.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+7.13. Executing OPT pass (performing simple optimizations).
+
+7.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 124 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~41 debug messages>
+
+7.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 124 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$1493 ($dff) from module timing_top (D = $procmux$1194_Y, Q = \input_shift, rval = 131'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:337:slice$1645 ($sdff) from module timing_top (D = { \input_shift [129:0] \serial_in }, Q = \input_shift).
+Adding SRST signal on $procdff$1494 ($dff) from module timing_top (D = $procmux$1188_Y, Q = \request, rval = 131'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:337:slice$1647 ($sdff) from module timing_top (D = \input_shift, Q = \request).
+Adding SRST signal on $procdff$1495 ($dff) from module timing_top (D = \load, Q = \transaction_valid, rval = 1'0).
+Adding SRST signal on $procdff$1496 ($dff) from module timing_top (D = { $procmux$1179_Y [68:34] $procmux$1179_Y [32:1] }, Q = { \response [68:34] \response [32:1] }, rval = 67'0000000000000000000000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$1496 ($dff) from module timing_top (D = \predicted_next_pc [0], Q = \response [0], rval = 1'0).
+Adding SRST signal on $procdff$1496 ($dff) from module timing_top (D = \response [32], Q = \response [33], rval = 1'0).
+Adding SRST signal on $flatten\full_design.predictor.\target_unit.$procdff$1565 ($dff) from module timing_top (D = $flatten\full_design.predictor.\target_unit.$2$lookahead\valid$690[15:0]$715, Q = \full_design.predictor.target_unit.valid, rval = 16'0000000000000000).
+Adding EN signal on $auto$ff.cc:337:slice$1659 ($sdff) from module timing_top (D = $flatten\full_design.predictor.\target_unit.$or$rtl/branch_target_buffer.v:27$722_Y, Q = \full_design.predictor.target_unit.valid).
+
+7.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 8 unused cells and 8 unused wires.
+<suppressed ~9 debug messages>
+
+7.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.13.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~30 debug messages>
+
+7.13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.13.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 121 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.13.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.13.16. Finished fast OPT passes. (There is nothing left to do.)
+
+7.14. Executing WREDUCE pass (reducing word size of cells).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1607 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1608 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1609 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1610 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1611 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1612 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1613 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1614 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1615 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1616 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1617 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1618 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1619 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1620 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1621 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1622 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1623 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1624 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1625 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1626 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1627 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1628 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1629 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1630 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1631 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1632 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1633 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1634 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1588 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1589 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1590 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1591 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1592 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1593 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1594 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1595 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1596 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1597 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1598 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1599 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1635 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1578 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1579 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1580 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1636 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1637 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1602 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1603 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1606 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1581 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1605 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1582 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1583 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1584 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1585 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1600 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1586 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1587 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1601 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1577 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1574 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1604 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1575 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 26 address bits (of 32) from memory init port timing_top.$flatten\full_design.predictor.\direction_unit.$auto$proc_memwr.cc:45:proc_memwr$1576 (full_design.predictor.direction_unit.dynamic_table.history).
+Removed top 29 bits (of 32) from port B of cell timing_top.$flatten\full_design.recovery.$add$rtl/branch_recovery.v:13$7 ($add).
+Converting cell timing_top.$flatten\full_design.predictor.\target_unit.$neg$rtl/branch_target_buffer.v:27$720 ($neg) from signed to unsigned.
+Removed top 1 bits (of 5) from port A of cell timing_top.$flatten\full_design.predictor.\target_unit.$neg$rtl/branch_target_buffer.v:27$720 ($neg).
+Removed top 29 bits (of 32) from port B of cell timing_top.$flatten\full_design.predictor.$add$rtl/branch_predictor.v:32$965 ($add).
+
+7.15. Executing PEEPOPT pass (run peephole optimizers).
+
+7.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.17. Executing SHARE pass (SAT-based resource sharing).
+
+7.18. Executing TECHMAP pass (map to technology primitives).
+
+7.18.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+7.18.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+7.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.21. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module timing_top:
+  creating $macc model for $flatten\full_design.predictor.$add$rtl/branch_predictor.v:32$965 ($add).
+  creating $macc model for $flatten\full_design.predictor.\target_unit.$neg$rtl/branch_target_buffer.v:27$720 ($neg).
+  creating $macc model for $flatten\full_design.recovery.$add$rtl/branch_recovery.v:13$7 ($add).
+  creating $alu model for $macc $flatten\full_design.recovery.$add$rtl/branch_recovery.v:13$7.
+  creating $alu model for $macc $flatten\full_design.predictor.\target_unit.$neg$rtl/branch_target_buffer.v:27$720.
+  creating $alu model for $macc $flatten\full_design.predictor.$add$rtl/branch_predictor.v:32$965.
+  creating $alu cell for $flatten\full_design.predictor.$add$rtl/branch_predictor.v:32$965: $auto$alumacc.cc:578:replace_alu$1662
+  creating $alu cell for $flatten\full_design.predictor.\target_unit.$neg$rtl/branch_target_buffer.v:27$720: $auto$alumacc.cc:578:replace_alu$1665
+  creating $alu cell for $flatten\full_design.recovery.$add$rtl/branch_recovery.v:13$7: $auto$alumacc.cc:578:replace_alu$1668
+  created 3 $alu and 0 $macc cells.
+
+7.22. Executing OPT pass (performing simple optimizations).
+
+7.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 121 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.22.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~30 debug messages>
+
+7.22.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.22.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 121 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.22.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.22.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.22.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.22.9. Finished fast OPT passes. (There is nothing left to do.)
+
+7.23. Executing MEMORY pass.
+
+7.23.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+7.23.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 2016 transformations.
+
+7.23.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 0.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 1.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 2.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 3.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 4.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 5.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 6.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 7.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 8.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 9.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 10.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 11.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 12.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 13.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 14.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 15.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 16.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 17.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 18.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 19.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 20.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 21.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 22.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 23.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 24.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 25.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 26.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 27.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 28.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 29.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 30.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 31.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 32.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 33.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 34.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 35.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 36.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 37.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 38.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 39.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 40.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 41.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 42.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 43.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 44.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 45.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 46.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 47.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 48.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 49.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 50.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 51.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 52.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 53.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 54.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 55.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 56.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 57.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 58.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 59.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 60.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 61.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 62.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 63.
+  Analyzing timing_top.full_design.predictor.direction_unit.dynamic_table.history write port 64.
+  Analyzing timing_top.full_design.predictor.target_unit.targets write port 0.
+  Analyzing timing_top.full_design.predictor.target_unit.tags write port 0.
+
+7.23.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+7.23.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `\full_design.predictor.direction_unit.dynamic_table.history'[0] in module `\timing_top':
+    no output FF found.
+Checking read port `\full_design.predictor.target_unit.targets'[0] in module `\timing_top':
+    no output FF found.
+Checking read port `\full_design.predictor.target_unit.tags'[0] in module `\timing_top':
+    no output FF found.
+Checking read port address `\full_design.predictor.direction_unit.dynamic_table.history'[0] in module `\timing_top':
+    merged address FF to cell.
+Checking read port address `\full_design.predictor.target_unit.targets'[0] in module `\timing_top':
+    merged address FF to cell.
+Checking read port address `\full_design.predictor.target_unit.tags'[0] in module `\timing_top':
+    merged address FF to cell.
+
+7.23.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.23.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+Consolidating write ports of memory timing_top.full_design.predictor.direction_unit.dynamic_table.history by address:
+  Merging ports 0, 1 (address 6'000000).
+  Merging ports 0, 2 (address 6'000000).
+  Merging ports 0, 3 (address 6'000000).
+  Merging ports 0, 4 (address 6'000000).
+  Merging ports 0, 5 (address 6'000000).
+  Merging ports 0, 6 (address 6'000000).
+  Merging ports 0, 7 (address 6'000000).
+  Merging ports 0, 8 (address 6'000000).
+  Merging ports 0, 9 (address 6'000000).
+  Merging ports 0, 10 (address 6'000000).
+  Merging ports 0, 11 (address 6'000000).
+  Merging ports 0, 12 (address 6'000000).
+  Merging ports 0, 13 (address 6'000000).
+  Merging ports 0, 14 (address 6'000000).
+  Merging ports 0, 15 (address 6'000000).
+  Merging ports 0, 16 (address 6'000000).
+  Merging ports 0, 17 (address 6'000000).
+  Merging ports 0, 18 (address 6'000000).
+  Merging ports 0, 19 (address 6'000000).
+  Merging ports 0, 20 (address 6'000000).
+  Merging ports 0, 21 (address 6'000000).
+  Merging ports 0, 22 (address 6'000000).
+  Merging ports 0, 23 (address 6'000000).
+  Merging ports 0, 24 (address 6'000000).
+  Merging ports 0, 25 (address 6'000000).
+  Merging ports 0, 26 (address 6'000000).
+  Merging ports 0, 27 (address 6'000000).
+  Merging ports 0, 28 (address 6'000000).
+  Merging ports 0, 29 (address 6'000000).
+  Merging ports 0, 30 (address 6'000000).
+  Merging ports 0, 31 (address 6'000000).
+  Merging ports 0, 32 (address 6'000000).
+  Merging ports 34, 35 (address 6'100010).
+  Merging ports 36, 37 (address 6'100100).
+  Merging ports 36, 38 (address 6'100100).
+  Merging ports 36, 39 (address 6'100100).
+  Merging ports 40, 41 (address 6'101000).
+  Merging ports 40, 42 (address 6'101000).
+  Merging ports 40, 43 (address 6'101000).
+  Merging ports 40, 44 (address 6'101000).
+  Merging ports 40, 45 (address 6'101000).
+  Merging ports 40, 46 (address 6'101000).
+  Merging ports 40, 47 (address 6'101000).
+  Merging ports 48, 49 (address 6'110000).
+  Merging ports 48, 50 (address 6'110000).
+  Merging ports 48, 51 (address 6'110000).
+  Merging ports 48, 52 (address 6'110000).
+  Merging ports 48, 53 (address 6'110000).
+  Merging ports 48, 54 (address 6'110000).
+  Merging ports 48, 55 (address 6'110000).
+  Merging ports 48, 56 (address 6'110000).
+  Merging ports 48, 57 (address 6'110000).
+  Merging ports 48, 58 (address 6'110000).
+  Merging ports 48, 59 (address 6'110000).
+  Merging ports 48, 60 (address 6'110000).
+  Merging ports 48, 61 (address 6'110000).
+  Merging ports 48, 62 (address 6'110000).
+  Merging ports 48, 63 (address 6'110000).
+Consolidating write ports of memory timing_top.full_design.predictor.direction_unit.dynamic_table.history by address:
+  Merging ports 1, 2 (address 6'100001).
+  Merging ports 1, 3 (address 6'100000).
+  Merging ports 1, 4 (address 6'100000).
+  Merging ports 1, 5 (address 6'100000).
+Consolidating write ports of memory timing_top.full_design.predictor.direction_unit.dynamic_table.history by address:
+Consolidating write ports of memory timing_top.full_design.predictor.direction_unit.dynamic_table.history using sat-based resource sharing:
+
+7.23.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+7.23.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.23.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+7.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.25. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+using FF mapping for memory timing_top.full_design.predictor.direction_unit.dynamic_table.history
+mapping memory timing_top.full_design.predictor.target_unit.targets via $__ICE40_RAM4K_
+mapping memory timing_top.full_design.predictor.target_unit.tags via $__ICE40_RAM4K_
+<suppressed ~148 debug messages>
+
+7.26. Executing TECHMAP pass (map to technology primitives).
+
+7.26.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/brams_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/brams_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_RAM4K_'.
+Successfully finished Verilog frontend.
+
+7.26.2. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/spram_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/spram_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_SPRAM_'.
+Successfully finished Verilog frontend.
+
+7.26.3. Continuing TECHMAP pass.
+Using template $paramod$a1f6b5309207cf102bfb625dccbd224ad06df61d$__ICE40_RAM4K_ for cells of type $__ICE40_RAM4K_.
+No more expansions possible.
+<suppressed ~29 debug messages>
+
+7.27. Executing ICE40_BRAMINIT pass.
+
+7.28. Executing OPT pass (performing simple optimizations).
+
+7.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~29 debug messages>
+
+7.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 63 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 59 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 58 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 57 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 56 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 55 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~24 debug messages>
+Removed a total of 8 cells.
+
+7.28.3. Executing OPT_DFF pass (perform DFF optimizations).
+Removing always-active EN on $auto$mem.cc:1169:emulate_transparency$1690 ($dffe) from module timing_top.
+Removing always-active EN on $auto$mem.cc:1169:emulate_transparency$1706 ($dffe) from module timing_top.
+
+7.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 0 unused cells and 89 unused wires.
+<suppressed ~1 debug messages>
+
+7.28.5. Rerunning OPT passes. (Removed registers in this run.)
+
+7.28.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.28.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 55 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.28.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.28.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.28.10. Finished fast OPT passes.
+
+7.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+Mapping memory \full_design.predictor.direction_unit.dynamic_table.history in module \timing_top:
+  created 64 $dff cells and 0 static cells of width 1.
+Extracted addr FF from read port 0 of timing_top.full_design.predictor.direction_unit.dynamic_table.history: $\full_design.predictor.direction_unit.dynamic_table.history$rdreg[0]
+  read interface: 1 $dff and 63 $mux cells.
+  write interface: 192 write mux blocks.
+
+7.30. Executing OPT pass (performing simple optimizations).
+
+7.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~207 debug messages>
+
+7.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 468 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~276 debug messages>
+
+7.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 468 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.30.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $\full_design.predictor.direction_unit.dynamic_table.history$rdreg[0] ($dff) from module timing_top (D = $auto$rtlil.cc:3381:Mux$1676, Q = $\full_design.predictor.direction_unit.dynamic_table.history$rdreg[0]$q, rval = 6'000000).
+
+7.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 1 unused cells and 330 unused wires.
+<suppressed ~2 debug messages>
+
+7.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.30.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.30.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~275 debug messages>
+
+7.30.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.30.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 467 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.30.13. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[0]$1774 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[0][2][0]$y$2128, Q = \full_design.predictor.direction_unit.dynamic_table.history[0]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[1]$1776 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[1][2][0]$y$2146, Q = \full_design.predictor.direction_unit.dynamic_table.history[1]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[2]$1778 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[2][2][0]$y$2166, Q = \full_design.predictor.direction_unit.dynamic_table.history[2]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[3]$1780 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[3][2][0]$y$2182, Q = \full_design.predictor.direction_unit.dynamic_table.history[3]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[4]$1782 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[4][2][0]$y$2202, Q = \full_design.predictor.direction_unit.dynamic_table.history[4]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[5]$1784 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[5][2][0]$y$2218, Q = \full_design.predictor.direction_unit.dynamic_table.history[5]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[6]$1786 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[6][2][0]$y$2236, Q = \full_design.predictor.direction_unit.dynamic_table.history[6]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[7]$1788 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[7][2][0]$y$2252, Q = \full_design.predictor.direction_unit.dynamic_table.history[7]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[8]$1790 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[8][2][0]$y$2270, Q = \full_design.predictor.direction_unit.dynamic_table.history[8]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[9]$1792 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[9][2][0]$y$2284, Q = \full_design.predictor.direction_unit.dynamic_table.history[9]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[10]$1794 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[10][2][0]$y$2298, Q = \full_design.predictor.direction_unit.dynamic_table.history[10]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[11]$1796 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[11][2][0]$y$2312, Q = \full_design.predictor.direction_unit.dynamic_table.history[11]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[12]$1798 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[12][2][0]$y$2326, Q = \full_design.predictor.direction_unit.dynamic_table.history[12]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[13]$1800 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[13][2][0]$y$2340, Q = \full_design.predictor.direction_unit.dynamic_table.history[13]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[14]$1802 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[14][2][0]$y$2354, Q = \full_design.predictor.direction_unit.dynamic_table.history[14]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[15]$1804 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[15][2][0]$y$2368, Q = \full_design.predictor.direction_unit.dynamic_table.history[15]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[16]$1806 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[16][2][0]$y$2388, Q = \full_design.predictor.direction_unit.dynamic_table.history[16]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[17]$1808 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[17][2][0]$y$2402, Q = \full_design.predictor.direction_unit.dynamic_table.history[17]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[18]$1810 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[18][2][0]$y$2416, Q = \full_design.predictor.direction_unit.dynamic_table.history[18]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[19]$1812 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[19][2][0]$y$2430, Q = \full_design.predictor.direction_unit.dynamic_table.history[19]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[20]$1814 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[20][2][0]$y$2444, Q = \full_design.predictor.direction_unit.dynamic_table.history[20]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[21]$1816 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[21][2][0]$y$2458, Q = \full_design.predictor.direction_unit.dynamic_table.history[21]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[22]$1818 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[22][2][0]$y$2472, Q = \full_design.predictor.direction_unit.dynamic_table.history[22]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[23]$1820 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[23][2][0]$y$2486, Q = \full_design.predictor.direction_unit.dynamic_table.history[23]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[24]$1822 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[24][2][0]$y$2502, Q = \full_design.predictor.direction_unit.dynamic_table.history[24]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[25]$1824 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[25][2][0]$y$2516, Q = \full_design.predictor.direction_unit.dynamic_table.history[25]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[26]$1826 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[26][2][0]$y$2530, Q = \full_design.predictor.direction_unit.dynamic_table.history[26]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[27]$1828 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[27][2][0]$y$2544, Q = \full_design.predictor.direction_unit.dynamic_table.history[27]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[28]$1830 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[28][2][0]$y$2558, Q = \full_design.predictor.direction_unit.dynamic_table.history[28]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[29]$1832 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[29][2][0]$y$2572, Q = \full_design.predictor.direction_unit.dynamic_table.history[29]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[30]$1834 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[30][2][0]$y$2586, Q = \full_design.predictor.direction_unit.dynamic_table.history[30]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[31]$1836 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[31][2][0]$y$2600, Q = \full_design.predictor.direction_unit.dynamic_table.history[31]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[32]$1838 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[32][2][0]$y$2622, Q = \full_design.predictor.direction_unit.dynamic_table.history[32]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[33]$1840 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[33][2][0]$y$2636, Q = \full_design.predictor.direction_unit.dynamic_table.history[33]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[34]$1842 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[34][2][0]$y$2650, Q = \full_design.predictor.direction_unit.dynamic_table.history[34]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[35]$1844 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[35][2][0]$y$2664, Q = \full_design.predictor.direction_unit.dynamic_table.history[35]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[36]$1846 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[36][2][0]$y$2678, Q = \full_design.predictor.direction_unit.dynamic_table.history[36]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[37]$1848 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[37][2][0]$y$2692, Q = \full_design.predictor.direction_unit.dynamic_table.history[37]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[38]$1850 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[38][2][0]$y$2706, Q = \full_design.predictor.direction_unit.dynamic_table.history[38]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[39]$1852 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[39][2][0]$y$2720, Q = \full_design.predictor.direction_unit.dynamic_table.history[39]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[40]$1854 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[40][2][0]$y$2736, Q = \full_design.predictor.direction_unit.dynamic_table.history[40]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[41]$1856 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[41][2][0]$y$2750, Q = \full_design.predictor.direction_unit.dynamic_table.history[41]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[42]$1858 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[42][2][0]$y$2764, Q = \full_design.predictor.direction_unit.dynamic_table.history[42]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[43]$1860 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[43][2][0]$y$2778, Q = \full_design.predictor.direction_unit.dynamic_table.history[43]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[44]$1862 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[44][2][0]$y$2792, Q = \full_design.predictor.direction_unit.dynamic_table.history[44]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[45]$1864 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[45][2][0]$y$2806, Q = \full_design.predictor.direction_unit.dynamic_table.history[45]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[46]$1866 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[46][2][0]$y$2820, Q = \full_design.predictor.direction_unit.dynamic_table.history[46]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[47]$1868 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[47][2][0]$y$2834, Q = \full_design.predictor.direction_unit.dynamic_table.history[47]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[48]$1870 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[48][2][0]$y$2852, Q = \full_design.predictor.direction_unit.dynamic_table.history[48]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[49]$1872 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[49][2][0]$y$2866, Q = \full_design.predictor.direction_unit.dynamic_table.history[49]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[50]$1874 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[50][2][0]$y$2880, Q = \full_design.predictor.direction_unit.dynamic_table.history[50]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[51]$1876 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[51][2][0]$y$2894, Q = \full_design.predictor.direction_unit.dynamic_table.history[51]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[52]$1878 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[52][2][0]$y$2908, Q = \full_design.predictor.direction_unit.dynamic_table.history[52]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[53]$1880 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[53][2][0]$y$2922, Q = \full_design.predictor.direction_unit.dynamic_table.history[53]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[54]$1882 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[54][2][0]$y$2936, Q = \full_design.predictor.direction_unit.dynamic_table.history[54]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[55]$1884 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[55][2][0]$y$2950, Q = \full_design.predictor.direction_unit.dynamic_table.history[55]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[56]$1886 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[56][2][0]$y$2966, Q = \full_design.predictor.direction_unit.dynamic_table.history[56]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[57]$1888 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[57][2][0]$y$2980, Q = \full_design.predictor.direction_unit.dynamic_table.history[57]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[58]$1890 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[58][2][0]$y$2994, Q = \full_design.predictor.direction_unit.dynamic_table.history[58]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[59]$1892 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[59][2][0]$y$3008, Q = \full_design.predictor.direction_unit.dynamic_table.history[59]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[60]$1894 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[60][2][0]$y$3022, Q = \full_design.predictor.direction_unit.dynamic_table.history[60]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[61]$1896 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[61][2][0]$y$3036, Q = \full_design.predictor.direction_unit.dynamic_table.history[61]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[62]$1898 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[62][2][0]$y$3050, Q = \full_design.predictor.direction_unit.dynamic_table.history[62]).
+Adding EN signal on $memory\full_design.predictor.direction_unit.dynamic_table.history[63]$1900 ($dff) from module timing_top (D = $memory\full_design.predictor.direction_unit.dynamic_table.history$wrmux[63][2][0]$y$3064, Q = \full_design.predictor.direction_unit.dynamic_table.history[63]).
+
+7.30.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.30.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~64 debug messages>
+
+7.30.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.30.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~275 debug messages>
+
+7.30.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.30.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 531 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 468 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~189 debug messages>
+Removed a total of 63 cells.
+
+7.30.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.30.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 0 unused cells and 63 unused wires.
+<suppressed ~1 debug messages>
+
+7.30.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.30.23. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.30.24. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~277 debug messages>
+
+7.30.25. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.30.26. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 468 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.30.27. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.30.28. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.30.29. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.30.30. Finished fast OPT passes. (There is nothing left to do.)
+
+7.31. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+7.32. Executing TECHMAP pass (map to technology primitives).
+
+7.32.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.32.2. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/arith_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_ice40_alu'.
+Successfully finished Verilog frontend.
+
+7.32.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $dff.
+Using template $paramod$44a13d10af618e7fbe7b9aad2f6151ffcee1e2fa\_80_ice40_alu for cells of type $alu.
+Using template $paramod$3ace65afedd5f6a6849996376b6c02262a5f23eb\_80_ice40_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $ne.
+Using template $paramod$constmap:755132e1e0176e7e858cd1a27f41b0eb234485b9$paramod$21c03ec725157176e885a706babcf9521550823c\_90_shift_shiftx for cells of type $shift.
+Using extmapper simplemap for cells of type $or.
+Using template $paramod$constmap:53dd6ada2d45a8116ef2136a4476a16275b4fd66$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $xor.
+No more expansions possible.
+<suppressed ~941 debug messages>
+
+7.33. Executing OPT pass (performing simple optimizations).
+
+7.33.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~256 debug messages>
+
+7.33.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 1488 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 1472 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~48 debug messages>
+Removed a total of 16 cells.
+
+7.33.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 106 unused cells and 135 unused wires.
+<suppressed ~107 debug messages>
+
+7.33.5. Finished fast OPT passes.
+
+7.34. Executing ICE40_OPT pass (performing simple optimizations).
+
+7.34.1. Running ICE40 specific optimizations.
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) timing_top.$auto$alumacc.cc:578:replace_alu$1662.slice[0].carry: CO=\request [2]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) timing_top.$auto$alumacc.cc:578:replace_alu$1665.slice[0].carry: CO=$auto$alumacc.cc:578:replace_alu$1665.BB [0]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) timing_top.$auto$alumacc.cc:578:replace_alu$1665.slice[4].carry: CO=$auto$alumacc.cc:578:replace_alu$1665.C [4]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) timing_top.$auto$alumacc.cc:578:replace_alu$1668.slice[0].carry: CO=\request [34]
+
+7.34.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~1 debug messages>
+
+7.34.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 1365 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.34.4. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $auto$ff.cc:337:slice$3523 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3520 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3517 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[2], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3514 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[3], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3511 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[4], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3508 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[5], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3505 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[6], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3502 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[7], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3499 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[8], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3496 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[9], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3493 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[10], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3490 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[11], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3487 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[12], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3484 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[13], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3481 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[14], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3478 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[15], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3475 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[16], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3472 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[17], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3469 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[18], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3466 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[19], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3463 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[20], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3460 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[21], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3457 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[22], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3454 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[23], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3451 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[24], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3448 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[25], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3445 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[26], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3442 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[27], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3439 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[28], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3436 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[29], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3433 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[30], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3430 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[31], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3427 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[32], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3424 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[33], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3421 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[34], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3418 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[35], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3415 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[36], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3412 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[37], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3409 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[38], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3406 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[39], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3403 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[40], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3400 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[41], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3397 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[42], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3394 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[43], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3391 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[44], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3388 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[45], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3385 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[46], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3382 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[47], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3379 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[48], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3376 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[49], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3373 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[50], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3370 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[51], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3367 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[52], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3364 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[53], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3361 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[54], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3358 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[55], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3355 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[56], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3352 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[57], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3349 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[58], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3346 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[59], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3343 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[60], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3340 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[61], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3337 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[62], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:337:slice$3334 ($_DFFE_PP_) from module timing_top (D = \request [130], Q = \full_design.predictor.direction_unit.dynamic_table.history[63], rval = 1'0).
+
+7.34.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 64 unused cells and 66 unused wires.
+<suppressed ~65 debug messages>
+
+7.34.6. Rerunning OPT passes. (Removed registers in this run.)
+
+7.34.7. Running ICE40 specific optimizations.
+
+7.34.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.34.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 1301 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.34.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.34.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.34.12. Finished OPT passes. (There is nothing left to do.)
+
+7.35. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+
+7.36. Executing TECHMAP pass (map to technology primitives).
+
+7.36.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/ff_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+7.36.2. Continuing TECHMAP pass.
+Using template $_SDFFCE_PP0P_ for cells of type $_SDFFCE_PP0P_.
+Using template $_SDFF_PP0_ for cells of type $_SDFF_PP0_.
+Using template $_DFF_P_ for cells of type $_DFF_P_.
+No more expansions possible.
+<suppressed ~499 debug messages>
+
+7.37. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.38. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+Mapping timing_top.$auto$alumacc.cc:578:replace_alu$1665.slice[0].carry ($lut).
+Mapping timing_top.$auto$alumacc.cc:578:replace_alu$1665.slice[4].carry ($lut).
+Mapping timing_top.$auto$alumacc.cc:578:replace_alu$1668.slice[0].carry ($lut).
+Mapping timing_top.$auto$alumacc.cc:578:replace_alu$1662.slice[0].carry ($lut).
+
+7.39. Executing ICE40_OPT pass (performing simple optimizations).
+
+7.39.1. Running ICE40 specific optimizations.
+
+7.39.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~106 debug messages>
+
+7.39.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 1773 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 1496 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 1366 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~1221 debug messages>
+Removed a total of 407 cells.
+
+7.39.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.39.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 0 unused cells and 3090 unused wires.
+<suppressed ~1 debug messages>
+
+7.39.6. Rerunning OPT passes. (Removed registers in this run.)
+
+7.39.7. Running ICE40 specific optimizations.
+
+7.39.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.39.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 1366 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.39.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.39.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.39.12. Finished OPT passes. (There is nothing left to do.)
+
+7.40. Executing CHECK pass (checking for obvious problems).
+Checking module timing_top...
+Found and reported 0 problems.
+
+7.41. Executing TECHMAP pass (map to technology primitives).
+
+7.41.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/latches_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/latches_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+7.41.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+7.42. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/abc9_model.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_CARRY_WRAPPER'.
+Successfully finished Verilog frontend.
+
+7.43. Executing ABC9 pass.
+
+7.43.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module timing_top.
+Found 0 SCCs.
+
+7.43.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.5. Executing TECHMAP pass (map to technology primitives).
+
+7.43.5.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.43.5.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~131 debug messages>
+
+7.43.6. Executing OPT pass (performing simple optimizations).
+
+7.43.6.1. Executing OPT_EXPR pass (perform const folding).
+
+7.43.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+7.43.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+7.43.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+7.43.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+7.43.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.43.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+7.43.6.8. Executing OPT_EXPR pass (perform const folding).
+
+7.43.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+7.43.7. Executing TECHMAP pass (map to technology primitives).
+
+7.43.7.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_map.v' to AST representation.
+Lexer warning: The SystemVerilog keyword `bit' (at /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_map.v:35) is not recognized unless read_verilog is called with -sv!
+Generating RTLIL representation for module `$__ABC9_BARRIER_MAP'.
+Successfully finished Verilog frontend.
+
+7.43.7.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+7.43.8. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_model.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_BARRIER'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+7.43.9. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~1129 debug messages>
+
+7.43.10. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.11. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+7.43.12. Executing TECHMAP pass (map to technology primitives).
+
+7.43.12.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.43.12.2. Continuing TECHMAP pass.
+Using template $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1 for cells of type $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1.
+Using template SB_CARRY for cells of type SB_CARRY.
+Using template $paramod\SB_LUT4\LUT_INIT=16'0110100110010110 for cells of type SB_LUT4.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $logic_and.
+No more expansions possible.
+<suppressed ~158 debug messages>
+
+7.43.13. Executing OPT pass (performing simple optimizations).
+
+7.43.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~4 debug messages>
+
+7.43.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 30 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 20 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 18 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~29 debug messages>
+Removed a total of 12 cells.
+
+7.43.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+7.43.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.43.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 18 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.43.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.43.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 0 unused cells and 24 unused wires.
+<suppressed ~1 debug messages>
+
+7.43.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.43.13.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.43.13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+7.43.13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.43.13.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 18 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.43.13.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.43.13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.43.13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.43.13.16. Finished fast OPT passes. (There is nothing left to do.)
+
+7.43.14. Executing AIGMAP pass (map logic to AIG).
+Module timing_top: replaced 503 cells with 3087 new cells, skipped 1990 cells.
+  replaced 4 cell types:
+       1 $_ANDNOT_
+     297 $_MUX_
+     143 $_OR_
+      62 $_XOR_
+  not replaced 16 cell types:
+     224 $_AND_
+      93 $_NOT_
+       4 $scopeinfo
+      59 SB_DFF
+      76 SB_DFFSR
+     342 SB_DFFESR
+       4 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000010000101
+      64 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000010100001
+      44 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000011100000
+       4 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000001100010
+       8 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000100001011
+      64 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000100010010
+     477 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000000010101
+     462 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000011001011
+       4 $paramod$65b9e5893759870fd62e6b87dc6ba151fdc97e95\SB_RAM40_4K
+      61 $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1
+
+7.43.14.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.14.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.14.3. Executing XAIGER2 backend.
+<suppressed ~3348 debug messages>
+Extracted 3192 AND gates and 0 wires from module `timing_top' to a netlist network with 1794 inputs and 3387 outputs.
+
+7.43.14.4. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+7.43.14.5. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/input.lut 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =    545/   1955  and =    1397  lev =   18 (0.59)  mem = 0.10 MB  box = 1188  bb = 1127
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =    545/   1955  and =    2402  lev =   54 (0.56)  mem = 0.11 MB  ch =  290  box = 1188  bb = 1127
+ABC: cst =       0  cls =    269  lit =     290  unused =    3637  proof =     0
+ABC: + &if -W 250 -v 
+ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =    2402.  Ch =   269.  Total mem =    1.16 MB. Peak cut mem =    0.10 MB.
+ABC: P:  Del = 6234.00.  Ar =     650.0.  Edge =     2183.  Cut =    13694.  T =     0.00 sec
+ABC: P:  Del = 6234.00.  Ar =     628.0.  Edge =     2187.  Cut =    13403.  T =     0.00 sec
+ABC: P:  Del = 6234.00.  Ar =     565.0.  Edge =     1873.  Cut =    13890.  T =     0.00 sec
+ABC: F:  Del = 6234.00.  Ar =     521.0.  Edge =     1791.  Cut =    13482.  T =     0.00 sec
+ABC: A:  Del = 6234.00.  Ar =     499.0.  Edge =     1493.  Cut =    13491.  T =     0.00 sec
+ABC: A:  Del = 6234.00.  Ar =     499.0.  Edge =     1493.  Cut =    13200.  T =     0.00 sec
+ABC: Total time =     0.01 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =    545/   1955  and =    1381  lev =   19 (0.59)  mem = 0.10 MB  box = 1188  bb = 1127
+ABC: Mapping (K=4)  :  lut =    499  edge =    1487  lev =    9 (0.44)  levB =   34  mem = 0.03 MB
+ABC: LUT = 499 : 2=162 32.5 %  3=185 37.1 %  4=152 30.5 %  Ave = 2.98
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.04 sec
+ABC: + time 
+ABC: elapse: 0.14 seconds, total: 0.14 seconds
+
+7.43.14.6. Executing AIGER frontend.
+<suppressed ~10 debug messages>
+Removed 2137 unused cells and 6558 unused wires.
+
+7.43.14.7. Executing ABC_OPS_REINTEGRATE pass (reintegrate ABC mapped design into module).
+ABC RESULTS:              $lut cells:      503
+ABC RESULTS:   $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1 cells:       61
+ABC RESULTS:           input signals:      149
+ABC RESULTS:          output signals:        1
+<suppressed ~2500 debug messages>
+Removing temp directory.
+
+7.43.15. Executing TECHMAP pass (map to technology primitives).
+
+7.43.15.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_unmap.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__ABC9_BARRIER'.
+Successfully finished Verilog frontend.
+
+7.43.15.2. Continuing TECHMAP pass.
+Using template $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1 for cells of type $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1.
+Using template $paramod$65b9e5893759870fd62e6b87dc6ba151fdc97e95\SB_RAM40_4K for cells of type $paramod$65b9e5893759870fd62e6b87dc6ba151fdc97e95\SB_RAM40_4K.
+No more expansions possible.
+<suppressed ~73 debug messages>
+
+7.44. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+7.45. Executing TECHMAP pass (map to technology primitives).
+
+7.45.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/ff_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+7.45.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~22 debug messages>
+Removed 189 unused cells and 4703 unused wires.
+
+7.46. Executing OPT_LUT pass (optimize LUTs).
+Discovering LUTs.
+Number of LUTs:      563
+  1-LUT                4
+  2-LUT              165
+  3-LUT              242
+  4-LUT              152
+  with \SB_CARRY    (#0)   57
+  with \SB_CARRY    (#1)   58
+
+Eliminating LUTs.
+Number of LUTs:      563
+  1-LUT                4
+  2-LUT              165
+  3-LUT              242
+  4-LUT              152
+  with \SB_CARRY    (#0)   57
+  with \SB_CARRY    (#1)   58
+
+Combining LUTs.
+Number of LUTs:      563
+  1-LUT                4
+  2-LUT              165
+  3-LUT              242
+  4-LUT              152
+  with \SB_CARRY    (#0)   57
+  with \SB_CARRY    (#1)   58
+
+Eliminated 0 LUTs.
+Combined 0 LUTs.
+<suppressed ~2909 debug messages>
+
+7.47. Executing TECHMAP pass (map to technology primitives).
+
+7.47.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/cells_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+7.47.2. Continuing TECHMAP pass.
+Using template $paramod$fd904e9e35cfd343a9df248824bd3f1408724879$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1101 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0111 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1011 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000010 for cells of type $lut.
+Using template $paramod$6e238df02989b317f10820a22773676e71120644$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000001 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1110 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000111 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101110 for cells of type $lut.
+Using template $paramod$4062cf70671465f0a81555c918e539e42ee3eab2$lut for cells of type $lut.
+Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8$lut for cells of type $lut.
+Using template $paramod$424ed2fb59da90e546e5b1ca8ecac079e8f359ae$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1001 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0110 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11000101 for cells of type $lut.
+Using template $paramod$93785b9c731eec5233cca020cc98b38141190c08$lut for cells of type $lut.
+Using template $paramod$30305e55a780880b9c824fe3509a4d981acb0f2b$lut for cells of type $lut.
+Using template $paramod$bbb10333e84a7e80f65e1494ebbfbf3f28568fcd$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11001010 for cells of type $lut.
+Using template $paramod$8d7a8d6e3356de09670738ba85f2c6b874f6b06d$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01100000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01001000 for cells of type $lut.
+Using template $paramod$85b779ce5ab505dbf25e5e046fb43ca2b76b878b$lut for cells of type $lut.
+Using template $paramod$571404c0889eaf57f492cb5e37f8acb5df5852f9$lut for cells of type $lut.
+Using template $paramod$6d6beead1425af15cf78b27fd9b11b41b5d4bce8$lut for cells of type $lut.
+Using template $paramod$cbf0a50c953b6a4c7e5a4cf3ec7fcd294af3c37d$lut for cells of type $lut.
+Using template $paramod$ce57c8604805f80ab07a0434d106bb987e82ae6c$lut for cells of type $lut.
+Using template $paramod$88dd7d1836cdd0778b512cb5e1a02bcecac22c09$lut for cells of type $lut.
+Using template $paramod$dc8f0be42379c903926eb5c45306997db4c0a27c$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0001 for cells of type $lut.
+Using template $paramod$272652f6c6fbe9a75eff76e45cc7e2788835518b$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10111000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001101 for cells of type $lut.
+Using template $paramod$41326ad8644342a66dfb051d050f2b6fbf15015b$lut for cells of type $lut.
+Using template $paramod$b93d1ea7a612a32c185108f67a153d44ffb9aac2$lut for cells of type $lut.
+Using template $paramod$b287726797d0722f64e731f1134f7c05af8f1578$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100100 for cells of type $lut.
+Using template $paramod$e49f6e3576ef1a6d2f58c54414dbb786af8cc869$lut for cells of type $lut.
+Using template $paramod$b45e5cb971154e30a797eecb0461619c3eeae12d$lut for cells of type $lut.
+Using template $paramod$a7c07944e10969b2e1fd563a5b72f89493cb3705$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11011000 for cells of type $lut.
+Using template $paramod$22adb60cf7e17fdcffe2405866e3bb37988aff02$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001001 for cells of type $lut.
+Using template $paramod$bb91a41b6c6e90c9de123b408208c402cb3d3d4b$lut for cells of type $lut.
+Using template $paramod$2ec6422db00d358fc7469efce6208bffbc8521cd$lut for cells of type $lut.
+Using template $paramod$712505941a295086314c22735153725461a87f4a$lut for cells of type $lut.
+Using template $paramod$e6a488add0b5a2d742e2ae29f62ce7616e04271d$lut for cells of type $lut.
+Using template $paramod$a1d323730045824cfc84bb9f4ee8031f1c4dcc9e$lut for cells of type $lut.
+Using template $paramod$068092ddede495d8462ffe530e6d91711913edbc$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01010100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10101000 for cells of type $lut.
+Using template $paramod$f24ba3ced4b870f8e829f5ac5a8af88573350e6f$lut for cells of type $lut.
+Using template $paramod$ab8bb87959c5d7cfa27886cee1355b38e054a61a$lut for cells of type $lut.
+Using template $paramod$db08fd84fb3c4d6a41eaec6adfffe445fb7eb17f$lut for cells of type $lut.
+Using template $paramod$59848369e5f408d15e0c8c710ff689c98ce02999$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11110010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100111 for cells of type $lut.
+Using template $paramod$d6ca727e39f31d51d29072e0f33aa09c65e37336$lut for cells of type $lut.
+Using template $paramod$65fcd91609318181207842c800347544ea14f245$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101111 for cells of type $lut.
+Using template $paramod$fceb3a526de44b8f6b38e567360f59f7cf5878fb$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10101110 for cells of type $lut.
+Using template $paramod$bb4fff1cc3b827238aa40993cafede1c5beecbe3$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11101010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100000 for cells of type $lut.
+Using template $paramod$df9fb170fde4d5e26eaf4b32ba81792a49993dc3$lut for cells of type $lut.
+Using template $paramod$8512f4fb47fa9596f76cdbe5b407a5b54df368e7$lut for cells of type $lut.
+Using template $paramod$b26fbfdb68e98cf016d61a8611b449e9f4a30f3c$lut for cells of type $lut.
+Using template $paramod$9c6e6a10ea00e5b0682f6243b802d7839a398197$lut for cells of type $lut.
+Using template $paramod$4853050665c020c8d21fb1a749196950a09d9df8$lut for cells of type $lut.
+No more expansions possible.
+<suppressed ~1468 debug messages>
+Removed 0 unused cells and 1257 unused wires.
+
+7.48. Executing AUTONAME pass.
+Renamed 1659 objects in module timing_top.
+<suppressed ~1659 debug messages>
+
+7.49. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `timing_top'. Setting top module to timing_top.
+
+7.49.1. Analyzing design hierarchy..
+Top module:  \timing_top
+
+7.49.2. Analyzing design hierarchy..
+Top module:  \timing_top
+Removed 0 unused modules.
+
+7.50. Printing statistics.
+
+=== timing_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      644 wires
+     1824 wire bits
+      644 public wires
+     1824 public wire bits
+        5 ports
+        5 port bits
+        8 cells
+        4   $scopeinfo
+        4   SB_RAM40_4K
+     1099 submodules
+       59   SB_CARRY
+       59   SB_DFF
+      342   SB_DFFESR
+       76   SB_DFFSR
+      563   SB_LUT4
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+        8 timing_top
+
+        +----------Count including submodules.
+        | 
+      644 wires
+     1824 wire bits
+      644 public wires
+     1824 public wire bits
+        5 ports
+        5 port bits
+        - memories
+        - memory bits
+        - processes
+        8 cells
+        4   $scopeinfo
+        4   SB_RAM40_4K
+     1099 submodules
+       59   SB_CARRY
+       59   SB_DFF
+      342   SB_DFFESR
+       76   SB_DFFSR
+      563   SB_LUT4
+
+7.51. Executing CHECK pass (checking for obvious problems).
+Checking module timing_top...
+Found and reported 0 problems.
+
+7.52. Executing JSON backend.
+
+8. Executing CHECK pass (checking for obvious problems).
+Checking module timing_top...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 21.0.0.21000334)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\timing_top": {
+         "num_wires":         644,
+         "num_wire_bits":     1824,
+         "num_pub_wires":     644,
+         "num_pub_wire_bits": 1824,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1107,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$scopeinfo": 4,
+            "SB_CARRY": 59,
+            "SB_DFF": 59,
+            "SB_DFFESR": 342,
+            "SB_DFFSR": 76,
+            "SB_LUT4": 563,
+            "SB_RAM40_4K": 4
+         }
+      }
+   },
+      "design": {
+         "num_wires":         644,
+         "num_wire_bits":     1824,
+         "num_pub_wires":     644,
+         "num_pub_wire_bits": 1824,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1107,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$scopeinfo": 4,
+            "SB_CARRY": 59,
+            "SB_DFF": 59,
+            "SB_DFFESR": 342,
+            "SB_DFFSR": 76,
+            "SB_LUT4": 563,
+            "SB_RAM40_4K": 4
+         }
+      }
+}
+
+9. Executing Verilog backend.
+Dumping module `\timing_top'.
+
+End of script. Logfile hash: 2bf5e9cef1, time: 1.25s, user: 1.06s, system: 0.02s, MEM: 46.20 MB peak
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 21.0.0.21000334)
+Time spent: 33% 25x read_verilog (0 sec), 32% 11x techmap (0 sec), ...

@@ -1,0 +1,51 @@
+{
+   "creator": "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 21.0.0.21000334)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\timing_top": {
+         "num_wires":         328,
+         "num_wire_bits":     1193,
+         "num_pub_wires":     328,
+         "num_pub_wire_bits": 1193,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         732,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$scopeinfo": 4,
+            "SB_CARRY": 59,
+            "SB_DFF": 27,
+            "SB_DFFESR": 278,
+            "SB_DFFSR": 70,
+            "SB_LUT4": 292,
+            "SB_RAM40_4K": 2
+         }
+      }
+   },
+      "design": {
+         "num_wires":         328,
+         "num_wire_bits":     1193,
+         "num_pub_wires":     328,
+         "num_pub_wire_bits": 1193,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         732,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$scopeinfo": 4,
+            "SB_CARRY": 59,
+            "SB_DFF": 27,
+            "SB_DFFESR": 278,
+            "SB_DFFSR": 70,
+            "SB_LUT4": 292,
+            "SB_RAM40_4K": 2
+         }
+      }
+}
+

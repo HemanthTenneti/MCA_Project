@@ -1,0 +1,6 @@
+{
+  "yosys": "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 21.0.0.21000334)",
+  "nextpnr-ice40": "\"nextpnr-ice40\" -- Next Generation Place and Route (Version )",
+  "nextpnr_executable_sha256": "b5986780c6d40dba01d4f404adf5e1250f334828dc9429757802d6751e7878fe",
+  "tool_package_version": "nextpnr-ice40 0.11.1_2"
+}

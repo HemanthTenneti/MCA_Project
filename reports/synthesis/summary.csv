@@ -1,0 +1,5 @@
+strategy,device,package,seed,target_mhz,estimated_fmax_mhz,clock,logic_cells,logic_cells_available,lut4,flip_flops,block_rams,io_cells
+always_not_taken,iCE40HX8K,CT256,1,25,93.92316436767578,clk$SB_IO_IN_$glb_clk,592,7680,292,375,2,5
+one_bit,iCE40HX8K,CT256,1,25,77.36943817138672,clk$SB_IO_IN_$glb_clk,961,7680,563,477,4,5
+two_bit,iCE40HX8K,CT256,1,25,71.40817260742188,clk$SB_IO_IN_$glb_clk,1198,7680,737,547,4,5
+fixture_reference,iCE40HX8K,CT256,1,25,324.3594055175781,clk$SB_IO_IN_$glb_clk,337,7680,72,332,0,5

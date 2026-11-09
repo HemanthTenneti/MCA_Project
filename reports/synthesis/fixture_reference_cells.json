@@ -1,0 +1,43 @@
+{
+   "creator": "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 21.0.0.21000334)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\timing_top": {
+         "num_wires":         81,
+         "num_wire_bits":     409,
+         "num_pub_wires":     81,
+         "num_pub_wire_bits": 409,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         404,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "SB_DFFESR": 262,
+            "SB_DFFSR": 70,
+            "SB_LUT4": 72
+         }
+      }
+   },
+      "design": {
+         "num_wires":         81,
+         "num_wire_bits":     409,
+         "num_pub_wires":     81,
+         "num_pub_wire_bits": 409,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         404,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "SB_DFFESR": 262,
+            "SB_DFFSR": 70,
+            "SB_LUT4": 72
+         }
+      }
+}
+

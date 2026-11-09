@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "results": {
+    "always_not_taken": "PASS timing wrapper transactions=3\ntb/tb_timing_top.v:49: $finish called at 6085000 (1ps)",
+    "one_bit": "PASS timing wrapper transactions=3\ntb/tb_timing_top.v:49: $finish called at 6085000 (1ps)",
+    "two_bit": "PASS timing wrapper transactions=3\ntb/tb_timing_top.v:49: $finish called at 6085000 (1ps)"
+  }
+}

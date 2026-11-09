@@ -1,0 +1,1511 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 21.0.0.21000334)
+
+-- Running command `read_verilog rtl/branch_predictor.v rtl/branch_recovery.v rtl/branch_target_buffer.v rtl/direction_predictor.v synth/timing_top.v; chparam -set MODE 0 -set FIXTURE_ONLY 0 timing_top; synth_ice40 -top timing_top -json /Users/hemanth10etii/Coding/MCA_Project/build/synthesis/always_not_taken.json; check -assert; tee -o /Users/hemanth10etii/Coding/MCA_Project/reports/synthesis/always_not_taken_cells.json stat -json; write_verilog -noattr -noexpr /Users/hemanth10etii/Coding/MCA_Project/build/synthesis/always_not_taken.v' --
+
+1. Executing Verilog-2005 frontend: rtl/branch_predictor.v
+Parsing Verilog input from `rtl/branch_predictor.v' to AST representation.
+Generating RTLIL representation for module `\branch_predictor'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: rtl/branch_recovery.v
+Parsing Verilog input from `rtl/branch_recovery.v' to AST representation.
+Generating RTLIL representation for module `\branch_recovery'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: rtl/branch_target_buffer.v
+Parsing Verilog input from `rtl/branch_target_buffer.v' to AST representation.
+Generating RTLIL representation for module `\branch_target_buffer'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: rtl/direction_predictor.v
+Parsing Verilog input from `rtl/direction_predictor.v' to AST representation.
+Generating RTLIL representation for module `\direction_predictor'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: synth/timing_top.v
+Parsing Verilog input from `synth/timing_top.v' to AST representation.
+Generating RTLIL representation for module `\timing_top'.
+Successfully finished Verilog frontend.
+Parameter \MODE = 0
+Parameter \FIXTURE_ONLY = 0
+
+6. Executing AST frontend in derive mode using pre-parsed AST for module `\timing_top'.
+Parameter \MODE = 0
+Parameter \FIXTURE_ONLY = 0
+Generating RTLIL representation for module `$paramod$ed6a858f1ff53ad10328448d00803a6c3694d233\timing_top'.
+
+7. Executing SYNTH_ICE40 pass.
+
+7.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/cells_sim.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\SB_IO'.
+Generating RTLIL representation for module `\SB_GB_IO'.
+Generating RTLIL representation for module `\SB_GB'.
+Generating RTLIL representation for module `\SB_LUT4'.
+Generating RTLIL representation for module `\SB_CARRY'.
+Generating RTLIL representation for module `\SB_DFF'.
+Generating RTLIL representation for module `\SB_DFFE'.
+Generating RTLIL representation for module `\SB_DFFSR'.
+Generating RTLIL representation for module `\SB_DFFR'.
+Generating RTLIL representation for module `\SB_DFFSS'.
+Generating RTLIL representation for module `\SB_DFFS'.
+Generating RTLIL representation for module `\SB_DFFESR'.
+Generating RTLIL representation for module `\SB_DFFER'.
+Generating RTLIL representation for module `\SB_DFFESS'.
+Generating RTLIL representation for module `\SB_DFFES'.
+Generating RTLIL representation for module `\SB_DFFN'.
+Generating RTLIL representation for module `\SB_DFFNE'.
+Generating RTLIL representation for module `\SB_DFFNSR'.
+Generating RTLIL representation for module `\SB_DFFNR'.
+Generating RTLIL representation for module `\SB_DFFNSS'.
+Generating RTLIL representation for module `\SB_DFFNS'.
+Generating RTLIL representation for module `\SB_DFFNESR'.
+Generating RTLIL representation for module `\SB_DFFNER'.
+Generating RTLIL representation for module `\SB_DFFNESS'.
+Generating RTLIL representation for module `\SB_DFFNES'.
+Generating RTLIL representation for module `\SB_RAM40_4K'.
+Generating RTLIL representation for module `\SB_RAM40_4KNR'.
+Generating RTLIL representation for module `\SB_RAM40_4KNW'.
+Generating RTLIL representation for module `\SB_RAM40_4KNRNW'.
+Generating RTLIL representation for module `\ICESTORM_LC'.
+Generating RTLIL representation for module `\SB_PLL40_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2F_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_2F_PAD'.
+Generating RTLIL representation for module `\SB_WARMBOOT'.
+Generating RTLIL representation for module `\SB_SPRAM256KA'.
+Generating RTLIL representation for module `\SB_HFOSC'.
+Generating RTLIL representation for module `\SB_LFOSC'.
+Generating RTLIL representation for module `\SB_RGBA_DRV'.
+Generating RTLIL representation for module `\SB_LED_DRV_CUR'.
+Generating RTLIL representation for module `\SB_RGB_DRV'.
+Generating RTLIL representation for module `\SB_I2C'.
+Generating RTLIL representation for module `\SB_SPI'.
+Generating RTLIL representation for module `\SB_LEDDA_IP'.
+Generating RTLIL representation for module `\SB_FILTER_50NS'.
+Generating RTLIL representation for module `\SB_IO_I3C'.
+Generating RTLIL representation for module `\SB_IO_OD'.
+Generating RTLIL representation for module `\SB_MAC16'.
+Generating RTLIL representation for module `\ICESTORM_RAM'.
+Successfully finished Verilog frontend.
+
+7.2. Executing HIERARCHY pass (managing design hierarchy).
+
+7.2.1. Analyzing design hierarchy..
+Top module:  \timing_top
+Used module:     \branch_predictor
+Used module:         \branch_target_buffer
+Used module:         \direction_predictor
+Used module:     \branch_recovery
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 4
+
+7.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\branch_target_buffer'.
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 4
+Generating RTLIL representation for module `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer'.
+Parameter \MODE = 2
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 6
+
+7.2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\direction_predictor'.
+Parameter \MODE = 2
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 6
+Generating RTLIL representation for module `$paramod$f3fd1ab85b2bcc02ba9e0d6b16c4a7482077dff2\direction_predictor'.
+Parameter \MODE = 0
+
+7.2.4. Executing AST frontend in derive mode using pre-parsed AST for module `\branch_predictor'.
+Parameter \MODE = 0
+Generating RTLIL representation for module `$paramod\branch_predictor\MODE=s32'00000000000000000000000000000000'.
+
+7.2.5. Analyzing design hierarchy..
+Top module:  \timing_top
+Used module:     $paramod\branch_predictor\MODE=s32'00000000000000000000000000000000
+Used module:         \branch_target_buffer
+Used module:         \direction_predictor
+Used module:     \branch_recovery
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 4
+Found cached RTLIL representation for module `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer'.
+Parameter \MODE = 0
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 6
+
+7.2.6. Executing AST frontend in derive mode using pre-parsed AST for module `\direction_predictor'.
+Parameter \MODE = 0
+Parameter \ADDR_WIDTH = 32
+Parameter \INDEX_BITS = 6
+Generating RTLIL representation for module `$paramod$048884c22e21dc93248b9c272c0342b1dc3352fd\direction_predictor'.
+
+7.2.7. Analyzing design hierarchy..
+Top module:  \timing_top
+Used module:     $paramod\branch_predictor\MODE=s32'00000000000000000000000000000000
+Used module:         $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer
+Used module:         $paramod$048884c22e21dc93248b9c272c0342b1dc3352fd\direction_predictor
+Used module:     \branch_recovery
+
+7.2.8. Analyzing design hierarchy..
+Top module:  \timing_top
+Used module:     $paramod\branch_predictor\MODE=s32'00000000000000000000000000000000
+Used module:         $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer
+Used module:         $paramod$048884c22e21dc93248b9c272c0342b1dc3352fd\direction_predictor
+Used module:     \branch_recovery
+Removing unused module `$paramod$f3fd1ab85b2bcc02ba9e0d6b16c4a7482077dff2\direction_predictor'.
+Removing unused module `\direction_predictor'.
+Removing unused module `\branch_target_buffer'.
+Removing unused module `\branch_predictor'.
+Removed 4 unused modules.
+
+7.3. Executing PROC pass (convert processes to netlists).
+
+7.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$synth/timing_top.v:42$297 in module timing_top.
+Marked 2 switch rules as full_case in process $proc$rtl/branch_target_buffer.v:24$691 in module $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.
+Removed a total of 0 dead cases.
+
+7.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 9 assignments to connections.
+
+7.3.4. Executing PROC_INIT pass (extract init attributes).
+
+7.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+7.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~5 debug messages>
+
+7.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\timing_top.$proc$synth/timing_top.v:42$297'.
+     1/4: $0\response[68:0]
+     2/4: $0\transaction_valid[0:0]
+     3/4: $0\request[130:0]
+     4/4: $0\input_shift[130:0]
+Creating decoders for process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+     1/16: $2$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$714
+     2/16: $2$memwr$\targets$rtl/branch_target_buffer.v:29$683_DATA[31:0]$713
+     3/16: $2$memwr$\targets$rtl/branch_target_buffer.v:29$683_ADDR[3:0]$712
+     4/16: $2$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$711
+     5/16: $2$memwr$\tags$rtl/branch_target_buffer.v:28$682_DATA[25:0]$710
+     6/16: $2$memwr$\tags$rtl/branch_target_buffer.v:28$682_ADDR[3:0]$709
+     7/16: $2$lookahead\valid$690[15:0]$715
+     8/16: $2$bitselwrite$pos$rtl/branch_target_buffer.v:27$681[3:0]$708
+     9/16: $1$lookahead\valid$690[15:0]$707
+    10/16: $1$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN[31:0]$706
+    11/16: $1$memwr$\targets$rtl/branch_target_buffer.v:29$683_DATA[31:0]$705
+    12/16: $1$memwr$\targets$rtl/branch_target_buffer.v:29$683_ADDR[3:0]$704
+    13/16: $1$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$703
+    14/16: $1$memwr$\tags$rtl/branch_target_buffer.v:28$682_DATA[25:0]$702
+    15/16: $1$memwr$\tags$rtl/branch_target_buffer.v:28$682_ADDR[3:0]$701
+    16/16: $1$bitselwrite$pos$rtl/branch_target_buffer.v:27$681[3:0]$700
+
+7.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+7.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\timing_top.\input_shift' using process `\timing_top.$proc$synth/timing_top.v:42$297'.
+  created $dff cell `$procdff$1060' with positive edge clock.
+Creating register for signal `\timing_top.\request' using process `\timing_top.$proc$synth/timing_top.v:42$297'.
+  created $dff cell `$procdff$1061' with positive edge clock.
+Creating register for signal `\timing_top.\transaction_valid' using process `\timing_top.$proc$synth/timing_top.v:42$297'.
+  created $dff cell `$procdff$1062' with positive edge clock.
+Creating register for signal `\timing_top.\response' using process `\timing_top.$proc$synth/timing_top.v:42$297'.
+  created $dff cell `$procdff$1063' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.\valid' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1064' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$bitselwrite$pos$rtl/branch_target_buffer.v:27$681' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1065' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\tags$rtl/branch_target_buffer.v:28$682_ADDR' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1066' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\tags$rtl/branch_target_buffer.v:28$682_DATA' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1067' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1068' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\targets$rtl/branch_target_buffer.v:29$683_ADDR' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1069' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\targets$rtl/branch_target_buffer.v:29$683_DATA' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1070' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$memwr$\targets$rtl/branch_target_buffer.v:29$683_EN' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1071' with positive edge clock.
+Creating register for signal `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$lookahead\valid$690' using process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+  created $dff cell `$procdff$1072' with positive edge clock.
+
+7.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+7.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 3 empty switches in `\timing_top.$proc$synth/timing_top.v:42$297'.
+Removing empty process `timing_top.$proc$synth/timing_top.v:42$297'.
+Found and cleaned up 2 empty switches in `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+Removing empty process `$paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.$proc$rtl/branch_target_buffer.v:24$691'.
+Cleaned up 5 empty switches.
+
+7.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+Optimizing module $paramod\branch_predictor\MODE=s32'00000000000000000000000000000000.
+Optimizing module $paramod$048884c22e21dc93248b9c272c0342b1dc3352fd\direction_predictor.
+Optimizing module branch_recovery.
+Optimizing module $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.
+
+7.4. Executing CHECK pass (checking for obvious problems).
+Checking module timing_top...
+Checking module $paramod\branch_predictor\MODE=s32'00000000000000000000000000000000...
+Checking module $paramod$048884c22e21dc93248b9c272c0342b1dc3352fd\direction_predictor...
+Checking module branch_recovery...
+Checking module $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer...
+Found and reported 0 problems.
+
+7.5. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\branch_predictor\MODE=s32'00000000000000000000000000000000.
+Deleting now unused module $paramod$048884c22e21dc93248b9c272c0342b1dc3352fd\direction_predictor.
+Deleting now unused module branch_recovery.
+Deleting now unused module $paramod$a847e8321476bc0d4fd9a5b096670743c671a740\branch_target_buffer.
+<suppressed ~4 debug messages>
+
+7.6. Executing TRIBUF pass.
+
+7.7. Executing DEMINOUT pass (demote inout ports to input or output).
+
+7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~3 debug messages>
+
+7.9. Executing CHECK pass (checking for obvious problems).
+Checking module timing_top...
+Found and reported 0 problems.
+
+7.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 23 unused cells and 96 unused wires.
+<suppressed ~27 debug messages>
+
+7.11. Executing OPT pass (performing simple optimizations).
+
+7.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 50 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 48 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 47 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~9 debug messages>
+Removed a total of 3 cells.
+
+7.11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\target_unit.$procmux$1028.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\target_unit.$procmux$1022.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\target_unit.$procmux$1016.
+    dead port 1/2 on $mux $flatten\full_design.predictor.\target_unit.$procmux$1010.
+Removed 4 multiplexer ports.
+<suppressed ~29 debug messages>
+
+7.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+    Consolidated identical input bits for $mux cell $flatten\full_design.predictor.\target_unit.$procmux$1007:
+      Old ports: A=26'00000000000000000000000000, B=26'11111111111111111111111111, Y=$flatten\full_design.predictor.\target_unit.$procmux$1007_Y
+      New ports: A=1'0, B=1'1, Y=$flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0]
+      New connections: $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [25:1] = { $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] $flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0] }
+  Optimizing cells in module \timing_top.
+    Consolidated identical input bits for $mux cell $flatten\full_design.predictor.\target_unit.$procmux$1049:
+      Old ports: A=$flatten\full_design.predictor.\target_unit.$2$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$711, B=26'00000000000000000000000000, Y=$flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695
+      New ports: A=$flatten\full_design.predictor.\target_unit.$procmux$1007_Y [0], B=1'0, Y=$flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0]
+      New connections: $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [25:1] = { $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] $flatten\full_design.predictor.\target_unit.$0$memwr$\tags$rtl/branch_target_buffer.v:28$682_EN[25:0]$695 [0] }
+  Optimizing cells in module \timing_top.
+Performed a total of 2 changes.
+
+7.11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 43 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.11.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 0 unused cells and 6 unused wires.
+<suppressed ~1 debug messages>
+
+7.11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.11.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~25 debug messages>
+
+7.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.11.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 43 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.11.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.11.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.11.16. Finished fast OPT passes. (There is nothing left to do.)
+
+7.12. Executing FSM pass (extract and optimize FSM).
+
+7.12.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+7.12.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+7.12.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+7.12.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.12.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+7.12.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+7.12.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+7.12.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+7.13. Executing OPT pass (performing simple optimizations).
+
+7.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 43 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~25 debug messages>
+
+7.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 43 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$1060 ($dff) from module timing_top (D = $procmux$983_Y, Q = \input_shift, rval = 131'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:337:slice$1079 ($sdff) from module timing_top (D = { \input_shift [129:0] \serial_in }, Q = \input_shift).
+Adding SRST signal on $procdff$1061 ($dff) from module timing_top (D = $procmux$977_Y, Q = \request, rval = 131'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:337:slice$1081 ($sdff) from module timing_top (D = \input_shift, Q = \request).
+Adding SRST signal on $procdff$1062 ($dff) from module timing_top (D = \load, Q = \transaction_valid, rval = 1'0).
+Adding SRST signal on $procdff$1063 ($dff) from module timing_top (D = { $procmux$968_Y [68:35] $procmux$968_Y [31:1] }, Q = { \response [68:35] \response [31:1] }, rval = 65'00000000000000000000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$1063 ($dff) from module timing_top (D = \predicted_next_pc [0], Q = \response [0], rval = 1'0).
+Adding SRST signal on $procdff$1063 ($dff) from module timing_top (D = \response [33:31], Q = \response [34:32], rval = 3'000).
+Adding SRST signal on $flatten\full_design.predictor.\target_unit.$procdff$1064 ($dff) from module timing_top (D = $flatten\full_design.predictor.\target_unit.$2$lookahead\valid$690[15:0]$715, Q = \full_design.predictor.target_unit.valid, rval = 16'0000000000000000).
+Adding EN signal on $auto$ff.cc:337:slice$1093 ($sdff) from module timing_top (D = $flatten\full_design.predictor.\target_unit.$or$rtl/branch_target_buffer.v:27$722_Y, Q = \full_design.predictor.target_unit.valid).
+
+7.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 8 unused cells and 8 unused wires.
+<suppressed ~9 debug messages>
+
+7.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.13.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~13 debug messages>
+
+7.13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.13.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 40 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.13.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.13.16. Finished fast OPT passes. (There is nothing left to do.)
+
+7.14. Executing WREDUCE pass (reducing word size of cells).
+Removed top 29 bits (of 32) from port B of cell timing_top.$flatten\full_design.recovery.$add$rtl/branch_recovery.v:13$7 ($add).
+Converting cell timing_top.$flatten\full_design.predictor.\target_unit.$neg$rtl/branch_target_buffer.v:27$720 ($neg) from signed to unsigned.
+Removed top 1 bits (of 5) from port A of cell timing_top.$flatten\full_design.predictor.\target_unit.$neg$rtl/branch_target_buffer.v:27$720 ($neg).
+Removed top 29 bits (of 32) from port B of cell timing_top.$flatten\full_design.predictor.$add$rtl/branch_predictor.v:32$965 ($add).
+
+7.15. Executing PEEPOPT pass (run peephole optimizers).
+
+7.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.17. Executing SHARE pass (SAT-based resource sharing).
+
+7.18. Executing TECHMAP pass (map to technology primitives).
+
+7.18.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+7.18.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+7.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.21. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module timing_top:
+  creating $macc model for $flatten\full_design.predictor.$add$rtl/branch_predictor.v:32$965 ($add).
+  creating $macc model for $flatten\full_design.predictor.\target_unit.$neg$rtl/branch_target_buffer.v:27$720 ($neg).
+  creating $macc model for $flatten\full_design.recovery.$add$rtl/branch_recovery.v:13$7 ($add).
+  creating $alu model for $macc $flatten\full_design.recovery.$add$rtl/branch_recovery.v:13$7.
+  creating $alu model for $macc $flatten\full_design.predictor.\target_unit.$neg$rtl/branch_target_buffer.v:27$720.
+  creating $alu model for $macc $flatten\full_design.predictor.$add$rtl/branch_predictor.v:32$965.
+  creating $alu cell for $flatten\full_design.predictor.$add$rtl/branch_predictor.v:32$965: $auto$alumacc.cc:578:replace_alu$1096
+  creating $alu cell for $flatten\full_design.predictor.\target_unit.$neg$rtl/branch_target_buffer.v:27$720: $auto$alumacc.cc:578:replace_alu$1099
+  creating $alu cell for $flatten\full_design.recovery.$add$rtl/branch_recovery.v:13$7: $auto$alumacc.cc:578:replace_alu$1102
+  created 3 $alu and 0 $macc cells.
+
+7.22. Executing OPT pass (performing simple optimizations).
+
+7.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 40 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.22.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~13 debug messages>
+
+7.22.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.22.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 40 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.22.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.22.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.22.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.22.9. Finished fast OPT passes. (There is nothing left to do.)
+
+7.23. Executing MEMORY pass.
+
+7.23.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+7.23.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+7.23.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+  Analyzing timing_top.full_design.predictor.target_unit.tags write port 0.
+
+7.23.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+7.23.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `\full_design.predictor.target_unit.tags'[0] in module `\timing_top':
+    no output FF found.
+Checking read port address `\full_design.predictor.target_unit.tags'[0] in module `\timing_top':
+    merged address FF to cell.
+
+7.23.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.23.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+7.23.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+7.23.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.23.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+7.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.25. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+mapping memory timing_top.full_design.predictor.target_unit.tags via $__ICE40_RAM4K_
+<suppressed ~66 debug messages>
+
+7.26. Executing TECHMAP pass (map to technology primitives).
+
+7.26.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/brams_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/brams_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_RAM4K_'.
+Successfully finished Verilog frontend.
+
+7.26.2. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/spram_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/spram_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_SPRAM_'.
+Successfully finished Verilog frontend.
+
+7.26.3. Continuing TECHMAP pass.
+Using template $paramod$a1f6b5309207cf102bfb625dccbd224ad06df61d$__ICE40_RAM4K_ for cells of type $__ICE40_RAM4K_.
+No more expansions possible.
+<suppressed ~27 debug messages>
+
+7.27. Executing ICE40_BRAMINIT pass.
+
+7.28. Executing OPT pass (performing simple optimizations).
+
+7.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~15 debug messages>
+
+7.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 44 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 43 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+7.28.3. Executing OPT_DFF pass (perform DFF optimizations).
+Removing always-active EN on $auto$mem.cc:1169:emulate_transparency$1112 ($dffe) from module timing_top.
+
+7.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 0 unused cells and 40 unused wires.
+<suppressed ~1 debug messages>
+
+7.28.5. Rerunning OPT passes. (Removed registers in this run.)
+
+7.28.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.28.7. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 43 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.28.8. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.28.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.28.10. Finished fast OPT passes.
+
+7.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+7.30. Executing OPT pass (performing simple optimizations).
+
+7.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 43 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~11 debug messages>
+
+7.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 43 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.30.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.30.9. Finished fast OPT passes. (There is nothing left to do.)
+
+7.31. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+7.32. Executing TECHMAP pass (map to technology primitives).
+
+7.32.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.32.2. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/arith_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_ice40_alu'.
+Successfully finished Verilog frontend.
+
+7.32.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $eq.
+Using template $paramod$44a13d10af618e7fbe7b9aad2f6151ffcee1e2fa\_80_ice40_alu for cells of type $alu.
+Using template $paramod$3ace65afedd5f6a6849996376b6c02262a5f23eb\_80_ice40_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $ne.
+Using template $paramod$constmap:755132e1e0176e7e858cd1a27f41b0eb234485b9$paramod$21c03ec725157176e885a706babcf9521550823c\_90_shift_shiftx for cells of type $shift.
+Using extmapper simplemap for cells of type $or.
+Using template $paramod$constmap:53dd6ada2d45a8116ef2136a4476a16275b4fd66$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $xor.
+No more expansions possible.
+<suppressed ~518 debug messages>
+
+7.33. Executing OPT pass (performing simple optimizations).
+
+7.33.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~256 debug messages>
+
+7.33.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 929 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 923 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~18 debug messages>
+Removed a total of 6 cells.
+
+7.33.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 110 unused cells and 66 unused wires.
+<suppressed ~111 debug messages>
+
+7.33.5. Finished fast OPT passes.
+
+7.34. Executing ICE40_OPT pass (performing simple optimizations).
+
+7.34.1. Running ICE40 specific optimizations.
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) timing_top.$auto$alumacc.cc:578:replace_alu$1096.slice[0].carry: CO=\request [2]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) timing_top.$auto$alumacc.cc:578:replace_alu$1099.slice[0].carry: CO=$auto$alumacc.cc:578:replace_alu$1099.BB [0]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) timing_top.$auto$alumacc.cc:578:replace_alu$1099.slice[4].carry: CO=$auto$alumacc.cc:578:replace_alu$1099.C [4]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) timing_top.$auto$alumacc.cc:578:replace_alu$1102.slice[0].carry: CO=\request [34]
+
+7.34.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.34.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 813 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.34.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.34.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+7.34.6. Rerunning OPT passes. (Removed registers in this run.)
+
+7.34.7. Running ICE40 specific optimizations.
+
+7.34.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.34.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 813 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.34.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.34.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.34.12. Finished OPT passes. (There is nothing left to do.)
+
+7.35. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+
+7.36. Executing TECHMAP pass (map to technology primitives).
+
+7.36.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/ff_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+7.36.2. Continuing TECHMAP pass.
+Using template $_SDFFCE_PP0P_ for cells of type $_SDFFCE_PP0P_.
+Using template $_SDFF_PP0_ for cells of type $_SDFF_PP0_.
+Using template $_DFF_P_ for cells of type $_DFF_P_.
+No more expansions possible.
+<suppressed ~397 debug messages>
+
+7.37. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.38. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+Mapping timing_top.$auto$alumacc.cc:578:replace_alu$1099.slice[0].carry ($lut).
+Mapping timing_top.$auto$alumacc.cc:578:replace_alu$1099.slice[4].carry ($lut).
+Mapping timing_top.$auto$alumacc.cc:578:replace_alu$1102.slice[0].carry ($lut).
+Mapping timing_top.$auto$alumacc.cc:578:replace_alu$1096.slice[0].carry ($lut).
+
+7.39. Executing ICE40_OPT pass (performing simple optimizations).
+
+7.39.1. Running ICE40 specific optimizations.
+
+7.39.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~74 debug messages>
+
+7.39.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 1221 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 944 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 814 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~1221 debug messages>
+Removed a total of 407 cells.
+
+7.39.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.39.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 0 unused cells and 2548 unused wires.
+<suppressed ~1 debug messages>
+
+7.39.6. Rerunning OPT passes. (Removed registers in this run.)
+
+7.39.7. Running ICE40 specific optimizations.
+
+7.39.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.39.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 814 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.39.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.39.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.39.12. Finished OPT passes. (There is nothing left to do.)
+
+7.40. Executing CHECK pass (checking for obvious problems).
+Checking module timing_top...
+Found and reported 0 problems.
+
+7.41. Executing TECHMAP pass (map to technology primitives).
+
+7.41.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/latches_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/latches_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+7.41.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+7.42. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/abc9_model.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_CARRY_WRAPPER'.
+Successfully finished Verilog frontend.
+
+7.43. Executing ABC9 pass.
+
+7.43.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module timing_top.
+Found 0 SCCs.
+
+7.43.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.5. Executing TECHMAP pass (map to technology primitives).
+
+7.43.5.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.43.5.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~131 debug messages>
+
+7.43.6. Executing OPT pass (performing simple optimizations).
+
+7.43.6.1. Executing OPT_EXPR pass (perform const folding).
+
+7.43.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+7.43.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+7.43.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+7.43.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+7.43.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.43.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+7.43.6.8. Executing OPT_EXPR pass (perform const folding).
+
+7.43.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+7.43.7. Executing TECHMAP pass (map to technology primitives).
+
+7.43.7.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_map.v' to AST representation.
+Lexer warning: The SystemVerilog keyword `bit' (at /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_map.v:35) is not recognized unless read_verilog is called with -sv!
+Generating RTLIL representation for module `$__ABC9_BARRIER_MAP'.
+Successfully finished Verilog frontend.
+
+7.43.7.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+7.43.8. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_model.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_BARRIER'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+7.43.9. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~841 debug messages>
+
+7.43.10. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.11. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+7.43.12. Executing TECHMAP pass (map to technology primitives).
+
+7.43.12.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.43.12.2. Continuing TECHMAP pass.
+Using template $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1 for cells of type $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1.
+Using template SB_CARRY for cells of type SB_CARRY.
+Using template $paramod\SB_LUT4\LUT_INIT=16'0110100110010110 for cells of type SB_LUT4.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $logic_and.
+No more expansions possible.
+<suppressed ~158 debug messages>
+
+7.43.13. Executing OPT pass (performing simple optimizations).
+
+7.43.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+<suppressed ~4 debug messages>
+
+7.43.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 30 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 20 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Computing hashes of 18 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+<suppressed ~29 debug messages>
+Removed a total of 12 cells.
+
+7.43.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+7.43.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.43.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 18 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.43.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.43.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+Removed 0 unused cells and 24 unused wires.
+<suppressed ~1 debug messages>
+
+7.43.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.43.13.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.43.13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \timing_top..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+7.43.13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \timing_top.
+Performed a total of 0 changes.
+
+7.43.13.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\timing_top'.
+Computing hashes of 18 cells of `\timing_top'.
+Finding duplicate cells in `\timing_top'.
+Removed a total of 0 cells.
+
+7.43.13.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.43.13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \timing_top..
+
+7.43.13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module timing_top.
+
+7.43.13.16. Finished fast OPT passes. (There is nothing left to do.)
+
+7.43.14. Executing AIGMAP pass (map logic to AIG).
+Module timing_top: replaced 307 cells with 1907 new cells, skipped 1346 cells.
+  replaced 4 cell types:
+       1 $_ANDNOT_
+     165 $_MUX_
+      79 $_OR_
+      62 $_XOR_
+  not replaced 16 cell types:
+      38 $_AND_
+      27 $_NOT_
+       4 $scopeinfo
+      27 SB_DFF
+      70 SB_DFFSR
+     278 SB_DFFESR
+       2 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000010000101
+      32 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000010100001
+      22 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000011100000
+       2 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000001100010
+       4 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000100001011
+      32 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000100010010
+     370 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000011001011
+     375 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000000010101
+       2 $paramod$65b9e5893759870fd62e6b87dc6ba151fdc97e95\SB_RAM40_4K
+      61 $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1
+
+7.43.14.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.14.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+7.43.14.3. Executing XAIGER2 backend.
+<suppressed ~2564 debug messages>
+Extracted 2126 AND gates and 0 wires from module `timing_top' to a netlist network with 1372 inputs and 2641 outputs.
+
+7.43.14.4. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+7.43.14.5. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/input.lut 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =    411/   1497  and =     753  lev =   13 (0.28)  mem = 0.07 MB  box = 900  bb = 839
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =    411/   1497  and =    1428  lev =   49 (0.27)  mem = 0.08 MB  ch =  176  box = 900  bb = 839
+ABC: cst =       0  cls =    169  lit =     176  unused =    2455  proof =     0
+ABC: + &if -W 250 -v 
+ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =    1428.  Ch =   169.  Total mem =    0.83 MB. Peak cut mem =    0.04 MB.
+ABC: P:  Del = 6234.00.  Ar =     283.0.  Edge =      914.  Cut =     7891.  T =     0.00 sec
+ABC: P:  Del = 6234.00.  Ar =     237.0.  Edge =      810.  Cut =     7869.  T =     0.00 sec
+ABC: P:  Del = 6234.00.  Ar =     240.0.  Edge =      805.  Cut =     7974.  T =     0.00 sec
+ABC: F:  Del = 6234.00.  Ar =     232.0.  Edge =      774.  Cut =     7652.  T =     0.00 sec
+ABC: A:  Del = 6234.00.  Ar =     229.0.  Edge =      758.  Cut =     7938.  T =     0.00 sec
+ABC: A:  Del = 6234.00.  Ar =     229.0.  Edge =      758.  Cut =     7898.  T =     0.00 sec
+ABC: Total time =     0.01 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =    411/   1497  and =     821  lev =   14 (0.26)  mem = 0.07 MB  box = 900  bb = 839
+ABC: Mapping (K=4)  :  lut =    229  edge =     755  lev =    6 (0.19)  levB =   34  mem = 0.02 MB
+ABC: LUT = 229 : 2=15 6.6 %  3=131 57.2 %  4=83 36.2 %  Ave = 3.30
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.02 sec
+ABC: + time 
+ABC: elapse: 0.08 seconds, total: 0.08 seconds
+
+7.43.14.6. Executing AIGER frontend.
+<suppressed ~10 debug messages>
+Removed 1365 unused cells and 4724 unused wires.
+
+7.43.14.7. Executing ABC_OPS_REINTEGRATE pass (reintegrate ABC mapped design into module).
+ABC RESULTS:              $lut cells:      233
+ABC RESULTS:   $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1 cells:       61
+ABC RESULTS:           input signals:       43
+ABC RESULTS:          output signals:        1
+<suppressed ~1908 debug messages>
+Removing temp directory.
+
+7.43.15. Executing TECHMAP pass (map to technology primitives).
+
+7.43.15.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_unmap.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__ABC9_BARRIER'.
+Successfully finished Verilog frontend.
+
+7.43.15.2. Continuing TECHMAP pass.
+Using template $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1 for cells of type $paramod$__ICE40_CARRY_WRAPPER\LUT=16'0110100110010110\I3_IS_CI=1'1.
+Using template $paramod$65b9e5893759870fd62e6b87dc6ba151fdc97e95\SB_RAM40_4K for cells of type $paramod$65b9e5893759870fd62e6b87dc6ba151fdc97e95\SB_RAM40_4K.
+No more expansions possible.
+<suppressed ~71 debug messages>
+
+7.44. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+7.45. Executing TECHMAP pass (map to technology primitives).
+
+7.45.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/ff_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+7.45.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~22 debug messages>
+Removed 84 unused cells and 3756 unused wires.
+
+7.46. Executing OPT_LUT pass (optimize LUTs).
+Discovering LUTs.
+Number of LUTs:      294
+  1-LUT                4
+  2-LUT               17
+  3-LUT              190
+  4-LUT               83
+  with \SB_CARRY    (#0)   58
+  with \SB_CARRY    (#1)   58
+
+Eliminating LUTs.
+Number of LUTs:      294
+  1-LUT                4
+  2-LUT               17
+  3-LUT              190
+  4-LUT               83
+  with \SB_CARRY    (#0)   58
+  with \SB_CARRY    (#1)   58
+
+Combining LUTs.
+Number of LUTs:      292
+  1-LUT                4
+  2-LUT               15
+  3-LUT              188
+  4-LUT               85
+  with \SB_CARRY    (#0)   58
+  with \SB_CARRY    (#1)   58
+
+Eliminated 0 LUTs.
+Combined 2 LUTs.
+<suppressed ~1702 debug messages>
+
+7.47. Executing TECHMAP pass (map to technology primitives).
+
+7.47.1. Executing Verilog-2005 frontend: /opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/cells_map.v
+Parsing Verilog input from `/opt/homebrew/Cellar/yosys/0.70/bin/../share/yosys/ice40/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+7.47.2. Continuing TECHMAP pass.
+Using template $paramod$ff0881b6a38ff8b5c6827b9c051e63eb2b1133e6$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
+Using template $paramod$fd904e9e35cfd343a9df248824bd3f1408724879$lut for cells of type $lut.
+Using template $paramod$762dcdf49521c1aa2145fa6746ab6d57dd5df22e$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11011111 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1011 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1110 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101110 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000111 for cells of type $lut.
+Using template $paramod$bbb10333e84a7e80f65e1494ebbfbf3f28568fcd$lut for cells of type $lut.
+Using template $paramod$4062cf70671465f0a81555c918e539e42ee3eab2$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1001 for cells of type $lut.
+Using template $paramod$2f7deae5fb594b0c70bb82efd4d3682a7baaa352$lut for cells of type $lut.
+Using template $paramod$e51a8a571bee774247b38f52d6e85fd62ae52cea$lut for cells of type $lut.
+Using template $paramod$fe70bb3280659663b8fa2b45f42fda9ccf4ccfaa$lut for cells of type $lut.
+Using template $paramod$571404c0889eaf57f492cb5e37f8acb5df5852f9$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11001010 for cells of type $lut.
+Using template $paramod$8d7a8d6e3356de09670738ba85f2c6b874f6b06d$lut for cells of type $lut.
+Using template $paramod$dd3fb0b6061f2daaaedd5e300347a303c89566f9$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11000101 for cells of type $lut.
+Using template $paramod$93785b9c731eec5233cca020cc98b38141190c08$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0010 for cells of type $lut.
+Using template $paramod$e2f682077d75dd018226341dd2d7343aa220f0c8$lut for cells of type $lut.
+Using template $paramod$165be24785e4097ccfb74473951770165dd92dfc$lut for cells of type $lut.
+Using template $paramod$9a269ffb0efb6ad342cb106a4e0636e23fdfd547$lut for cells of type $lut.
+Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11011000 for cells of type $lut.
+Using template $paramod$b26fbfdb68e98cf016d61a8611b449e9f4a30f3c$lut for cells of type $lut.
+Using template $paramod$19305be8809aa959285cea94bd28a9bcacb54173$lut for cells of type $lut.
+Using template $paramod$6e238df02989b317f10820a22773676e71120644$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0001 for cells of type $lut.
+Using template $paramod$ba7c22fadfbf9ee7abcb895a21403114111dd201$lut for cells of type $lut.
+Using template $paramod$df196ed0a1da5c4a58c5e08a1dac304fd3fccaab$lut for cells of type $lut.
+Using template $paramod$272652f6c6fbe9a75eff76e45cc7e2788835518b$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001000 for cells of type $lut.
+Using template $paramod$8cbde5df415e1b1f73010b234ade0488e5afeb0b$lut for cells of type $lut.
+Using template $paramod$19e5b38cca183d8b6b3a15d20dc995c09cd71893$lut for cells of type $lut.
+Using template $paramod$e49f6e3576ef1a6d2f58c54414dbb786af8cc869$lut for cells of type $lut.
+Using template $paramod$b45e5cb971154e30a797eecb0461619c3eeae12d$lut for cells of type $lut.
+Using template $paramod$a7c07944e10969b2e1fd563a5b72f89493cb3705$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100100 for cells of type $lut.
+Using template $paramod$59848369e5f408d15e0c8c710ff689c98ce02999$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1101 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10111010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11101100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11101010 for cells of type $lut.
+Using template $paramod$973818279bc95792902f3c09371fd2407d04a2a5$lut for cells of type $lut.
+Using template $paramod$800ad51c173ef1531dc8c2197ac409be85e8cb0a$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0100 for cells of type $lut.
+No more expansions possible.
+<suppressed ~922 debug messages>
+Removed 0 unused cells and 656 unused wires.
+
+7.48. Executing AUTONAME pass.
+Renamed 1036 objects in module timing_top.
+<suppressed ~1036 debug messages>
+
+7.49. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `timing_top'. Setting top module to timing_top.
+
+7.49.1. Analyzing design hierarchy..
+Top module:  \timing_top
+
+7.49.2. Analyzing design hierarchy..
+Top module:  \timing_top
+Removed 0 unused modules.
+
+7.50. Printing statistics.
+
+=== timing_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      328 wires
+     1193 wire bits
+      328 public wires
+     1193 public wire bits
+        5 ports
+        5 port bits
+        6 cells
+        4   $scopeinfo
+        2   SB_RAM40_4K
+      726 submodules
+       59   SB_CARRY
+       27   SB_DFF
+      278   SB_DFFESR
+       70   SB_DFFSR
+      292   SB_LUT4
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+        6 timing_top
+
+        +----------Count including submodules.
+        | 
+      328 wires
+     1193 wire bits
+      328 public wires
+     1193 public wire bits
+        5 ports
+        5 port bits
+        - memories
+        - memory bits
+        - processes
+        6 cells
+        4   $scopeinfo
+        2   SB_RAM40_4K
+      726 submodules
+       59   SB_CARRY
+       27   SB_DFF
+      278   SB_DFFESR
+       70   SB_DFFSR
+      292   SB_LUT4
+
+7.51. Executing CHECK pass (checking for obvious problems).
+Checking module timing_top...
+Found and reported 0 problems.
+
+7.52. Executing JSON backend.
+
+8. Executing CHECK pass (checking for obvious problems).
+Checking module timing_top...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 21.0.0.21000334)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\timing_top": {
+         "num_wires":         328,
+         "num_wire_bits":     1193,
+         "num_pub_wires":     328,
+         "num_pub_wire_bits": 1193,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         732,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$scopeinfo": 4,
+            "SB_CARRY": 59,
+            "SB_DFF": 27,
+            "SB_DFFESR": 278,
+            "SB_DFFSR": 70,
+            "SB_LUT4": 292,
+            "SB_RAM40_4K": 2
+         }
+      }
+   },
+      "design": {
+         "num_wires":         328,
+         "num_wire_bits":     1193,
+         "num_pub_wires":     328,
+         "num_pub_wire_bits": 1193,
+         "num_ports":         5,
+         "num_port_bits":     5,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         732,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$scopeinfo": 4,
+            "SB_CARRY": 59,
+            "SB_DFF": 27,
+            "SB_DFFESR": 278,
+            "SB_DFFSR": 70,
+            "SB_LUT4": 292,
+            "SB_RAM40_4K": 2
+         }
+      }
+}
+
+9. Executing Verilog backend.
+Dumping module `\timing_top'.
+
+End of script. Logfile hash: 3c630a9bcc, time: 1.11s, user: 0.96s, system: 0.02s, MEM: 38.33 MB peak
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231, Release, AppleClang clang++ 21.0.0.21000334)
+Time spent: 39% 25x read_verilog (0 sec), 37% 11x techmap (0 sec), ...

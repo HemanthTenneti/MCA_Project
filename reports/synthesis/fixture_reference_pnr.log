@@ -1,0 +1,172 @@
+Warning: No PCF file specified; IO pins will be placed automatically
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:        3 LCs used as LUT4 only
+Info:       69 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:      263 LCs used as DFF only
+Info: Packing carries..
+Info:        0 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:        0 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting clk$SB_IO_IN (fanout 332)
+Info: promoting reset$SB_IO_IN [reset] (fanout 331)
+Info: promoting load_SB_LUT4_I3_O [cen] (fanout 131)
+Info: promoting load_SB_LUT4_I3_1_O [cen] (fanout 131)
+Info: Constraining chains...
+Info:        0 LCs used to legalise carry chains.
+Info: Checksum: 0x670c46b8
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:     337/   7680     4%
+Info: 	        ICESTORM_RAM:       0/     32     0%
+Info: 	               SB_IO:       5/    206     2%
+Info: 	               SB_GB:       4/      8    50%
+Info: 	        ICESTORM_PLL:       0/      2     0%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 339 cells, random placement wirelen = 8706.
+Info:     at initial placer iter 0, wirelen = 56
+Info:     at initial placer iter 1, wirelen = 56
+Info:     at initial placer iter 2, wirelen = 56
+Info:     at initial placer iter 3, wirelen = 56
+Info: Running main analytical placer, max placement attempts per cell = 14964.
+Info:     at iteration #1, type ALL: wirelen solved = 56, spread = 417, legal = 1326; time = 0.01s
+Info:     at iteration #2, type ALL: wirelen solved = 117, spread = 373, legal = 1279; time = 0.01s
+Info:     at iteration #3, type ALL: wirelen solved = 140, spread = 367, legal = 1316; time = 0.01s
+Info:     at iteration #4, type ALL: wirelen solved = 164, spread = 377, legal = 1595; time = 0.01s
+Info:     at iteration #5, type ALL: wirelen solved = 174, spread = 435, legal = 1292; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 159, spread = 395, legal = 1498; time = 0.01s
+Info:     at iteration #7, type ALL: wirelen solved = 187, spread = 452, legal = 1494; time = 0.01s
+Info: HeAP Placer Time: 0.06s
+Info:   of which solving equations: 0.02s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.03s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 10, wirelen = 1279
+Info:   at iteration #5: temp = 0.000000, timing cost = 54, wirelen = 756
+Info:   at iteration #10: temp = 0.000000, timing cost = 23, wirelen = 647
+Info:   at iteration #15: temp = 0.000000, timing cost = 26, wirelen = 611
+Info:   at iteration #20: temp = 0.000000, timing cost = 25, wirelen = 597
+Info:   at iteration #25: temp = 0.000000, timing cost = 20, wirelen = 576
+Info:   at iteration #28: temp = 0.000000, timing cost = 23, wirelen = 543 
+Info: SA placement time 0.06s
+
+Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 323.83 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                       -> posedge clk$SB_IO_IN_$glb_clk: 8.12 ns
+Info: Max delay posedge clk$SB_IO_IN_$glb_clk -> <async>                      : 1.68 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 3 endpoint(s)
+Info:          + represents [1,3) endpoint(s)
+Info: [ 36912,  37001) |+
+Info: [ 37001,  37090) | 
+Info: [ 37090,  37179) |**+
+Info: [ 37179,  37268) |******+
+Info: [ 37268,  37357) | 
+Info: [ 37357,  37446) |*+
+Info: [ 37446,  37535) |*+
+Info: [ 37535,  37624) |*+
+Info: [ 37624,  37713) |******+
+Info: [ 37713,  37802) |*+
+Info: [ 37802,  37891) |***+
+Info: [ 37891,  37980) |*+
+Info: [ 37980,  38069) |******+
+Info: [ 38069,  38158) |****+
+Info: [ 38158,  38247) | 
+Info: [ 38247,  38336) |****+
+Info: [ 38336,  38425) |************************************************************ 
+Info: [ 38425,  38514) |*********************************************+
+Info: [ 38514,  38603) |**********+
+Info: [ 38603,  38692) |**** 
+Info: Checksum: 0xffc03e99
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 771 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:        926 |      124        802 |  124   802 |         0|       0.11       0.11|
+Info: Routing complete.
+Info: Router1 time 0.11s
+Info: Checksum: 0x8db7f4a2
+
+Info: Critical path report for clock 'clk$SB_IO_IN_$glb_clk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.54  0.54 Source transaction_valid_SB_DFFSR_Q_DFFLC.O
+Info:    routing  1.27  1.81 Net transaction_valid (5,7) -> (9,6)
+Info:                          Sink response_SB_DFFSR_Q_67_R_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               synth/timing_top.v:17.9-17.26
+Info:      logic  0.38  2.19 Source response_SB_DFFSR_Q_67_R_SB_LUT4_O_LC.O
+Info:    routing  0.79  2.98 Net response_SB_DFFSR_Q_67_R (9,6) -> (9,5)
+Info:                          Sink response_SB_DFFSR_Q_67_D_SB_LUT4_O_LC.SR
+Info:      setup  0.10  3.08 Source response_SB_DFFSR_Q_67_D_SB_LUT4_O_LC.SR
+Info: 1.02 ns logic, 2.07 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge clk$SB_IO_IN_$glb_clk':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source reset$sb_io.D_IN_0
+Info:    routing  1.67  1.67 Net reset$SB_IO_IN (0,9) -> (6,7)
+Info:                          Sink load_SB_LUT4_I3_LC.I2
+Info:                          Defined in:
+Info:                               synth/timing_top.v:12.32-12.37
+Info:      logic  0.38  2.05 Source load_SB_LUT4_I3_LC.O
+Info:    routing  2.31  4.36 Net load_SB_LUT4_I3_O (6,7) -> (16,0)
+Info:                          Sink $gbuf_load_SB_LUT4_I3_O_$glb_ce.USER_SIGNAL_TO_GLOBAL_BUFFER
+Info:      logic  0.62  4.97 Source $gbuf_load_SB_LUT4_I3_O_$glb_ce.GLOBAL_BUFFER_OUTPUT
+Info:    routing  0.60  5.58 Net load_SB_LUT4_I3_O_$glb_ce (16,0) -> (1,4)
+Info:                          Sink input_shift_SB_DFFESR_Q_DFFLC.CEN
+Info:      setup  0.10  5.68 Source input_shift_SB_DFFESR_Q_DFFLC.CEN
+Info: 1.10 ns logic, 4.58 ns routing
+
+Info: Critical path report for cross-domain path 'posedge clk$SB_IO_IN_$glb_clk' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.54  0.54 Source serial_out_SB_DFFSR_Q_D_SB_LUT4_O_LC.O
+Info:    routing  0.96  1.50 Net serial_out$SB_IO_OUT (4,2) -> (4,0)
+Info:                          Sink serial_out$sb_io.D_OUT_0
+Info:                          Defined in:
+Info:                               synth/timing_top.v:13.17-13.27
+Info: 0.54 ns logic, 0.96 ns routing
+
+Info: Max frequency for clock 'clk$SB_IO_IN_$glb_clk': 324.36 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                       -> posedge clk$SB_IO_IN_$glb_clk: 5.68 ns
+Info: Max delay posedge clk$SB_IO_IN_$glb_clk -> <async>                      : 1.50 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 5 endpoint(s)
+Info:          + represents [1,5) endpoint(s)
+Info: [ 36917,  36999) |+
+Info: [ 36999,  37081) | 
+Info: [ 37081,  37163) | 
+Info: [ 37163,  37245) | 
+Info: [ 37245,  37327) | 
+Info: [ 37327,  37409) |+
+Info: [ 37409,  37491) |****+
+Info: [ 37491,  37573) | 
+Info: [ 37573,  37655) |+
+Info: [ 37655,  37737) |*****+
+Info: [ 37737,  37819) |*+
+Info: [ 37819,  37901) |+
+Info: [ 37901,  37983) |+
+Info: [ 37983,  38065) |***+
+Info: [ 38065,  38147) |***+
+Info: [ 38147,  38229) |**+
+Info: [ 38229,  38311) | 
+Info: [ 38311,  38393) | 
+Info: [ 38393,  38475) |************************************************************ 
+Info: [ 38475,  38557) |******+
+1 warning, 0 errors
+
+Info: Program finished normally.
