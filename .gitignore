@@ -6,3 +6,27 @@ __pycache__/
 .venv/
 
 .playwright-cli/
+# Build artifacts
+build/
+*.o
+*.pyc
+__pycache__/
+
+# Synthesis outputs
+*.asc
+*.json
+*.rpt
+
+# Simulation outputs
+*.vvp
+*.vcd
+*.gtkw.bak
+
+# Python cache
+.pytest_cache/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
