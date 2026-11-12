@@ -1,122 +1,122 @@
 # Individual Contributions - Phase I
 
+Each member's contributions below follow the repository commit history (21 commits).
+
 ## Team Members
 1. **Hemanth Tenneti** - Lead Architect
-2. **Aaloke** - Verification Engineer  
-3. **Arina** - Hardware Integration Engineer
-4. **Manan** - Analysis & Optimization Engineer
-5. **Krishnadevan** - Documentation & Research
+2. **Aaloke** - Verification Engineer
+3. **Arina Ali** - Hardware Integration Engineer
+4. **Manan** - Analysis and Optimization Engineer
+5. **Krishnadevan** - Documentation and Research
 
 ---
 
 ## Hemanth Tenneti (Lead Architect)
 
-**Role:** Overall system design, core RTL implementation, integration lead
+**Role:** Overall system design, core RTL, architecture documentation
 
 **Contributions:**
-- Designed three-strategy branch predictor architecture
-- Implemented all direction predictor modules (always-not-taken, 1-bit, 2-bit)
-- Created comprehensive testbench harness for two-cycle evaluation
-- Developed recovery interface and flush/redirect logic
-- Integrated all team components into unified system
-- Led verification and validation efforts
+- Created the initial project structure and the Python reference model
+- Implemented the top-level branch predictor and the direction predictors (always-not-taken, 1-bit, 2-bit)
+- Implemented branch recovery with flush/redirect logic
+- Wrote the architecture and design documentation
+- Added the project guide builder and finalized `.gitignore`
 
 **Key Artifacts:**
-- `rtl/predictor_always_not_taken.v`
-- `rtl/predictor_1bit.v`
-- `rtl/predictor_2bit.v`
-- `rtl/recovery.v`
-- `tb/harness.v`
-- `tb/testbench.v`
+- `rtl/branch_predictor.v`
+- `rtl/direction_predictor.v`
+- `rtl/branch_recovery.v`
+- `scripts/reference_model.py`
+- `ARCHITECTURE.md`, `docs/design.md`
+- `scripts/build_project_guide.py`, `docs/project_guide.docx`, `output/pdf/project_guide.pdf`
 
-**Commits:** 6 (Lead role, coordination)
+**Commits:** 4
 
 ---
 
 ## Aaloke (Verification Engineer)
 
-**Role:** Verification infrastructure, functional validation, simulation
+**Role:** Testbenches, functional validation, waveforms, video script
 
 **Contributions:**
-- Designed serial wrapper for FPGA evaluation
-- Enhanced testbench with functional simulation and constraint checking
-- Developed waveform capture and VCD infrastructure
-- Created comprehensive test suite with assertions
-- Validated RTL against Python reference model across all workloads
-- Generated waveform evidence and comparison reports
+- Wrote the unit and trace testbenches and the project test runner
+- Wrote the functional validation testbench and the test plan
+- Produced verification results, VCD waveforms and test metrics
+- Wrote the prototype video script
 
 **Key Artifacts:**
-- `synth/serial_wrapper.v`
-- `tb/functional_validation.v`
-- `tb/constraints.sdc`
-- Waveform files in `reports/waveforms/`
+- `tb/tb_unit.v`, `tb/tb_trace.v`, `scripts/test_project.py`
+- `tb/functional_validation.v`, `TESTPLAN.md`
+- `VERIFICATION_RESULTS.md`, `reports/verification.json`, `reports/validation.log`, `reports/unit_checks.json`
+- `reports/waveforms/`, `docs/loop.gtkw`
+- `docs/video_script.md`
 
-**Commits:** 4 (Verification focus)
+**Commits:** 4
 
 ---
 
-## Arina (Hardware Integration Engineer)
+## Arina Ali (Hardware Integration Engineer)
 
-**Role:** Synthesis flow, FPGA integration, timing/resource optimization
+**Role:** Branch target buffer, build flow, synthesis and timing, Phase I report
 
 **Contributions:**
-- Created synthesis flow using Yosys and nextpnr
-- Developed timing constraints and optimization strategies
-- Performed synthesis on iCE40 HX8K target
-- Generated resource utilization analysis
-- Optimized design for 25 MHz timing closure
-- Created synthesis reports and FPGA implementation documentation
+- Implemented the branch target buffer and the build Makefile
+- Built the Yosys/nextpnr synthesis flow
+- Added timing constraints, the timing harness and synthesis reports
+- Wrote the Phase I report, build targets and delivery checklist
 
 **Key Artifacts:**
-- `synth/yosys_synthesis.tcl`
-- `synth/constraints.sdc`
-- `reports/synthesis/` (synthesis reports)
-- Timing closure verification logs
+- `rtl/branch_target_buffer.v`, `Makefile`
+- `scripts/synthesize.py`, `synth/yosys_synthesis.tcl`
+- `synth/constraints.sdc`, `synth/timing_top.v`, `tb/tb_timing_top.v`
+- `reports/synthesis/`
+- `PHASE1_REPORT.md`, `Makefile.phase1`, `DELIVERY_CHECKLIST.md`
 
-**Commits:** 5 (Hardware focus, synthesis expertise)
+**Commits:** 4
 
 ---
 
-## Manan (Analysis & Optimization Engineer)
+## Manan (Analysis and Optimization Engineer)
 
-**Role:** Experimental methodology, data analysis, metrics generation
+**Role:** Demo, readable results, README and submission package
 
 **Contributions:**
-- Developed experiment runner and workload framework
-- Implemented accuracy metrics calculation
-- Created CPI analysis pipeline
-- Generated comparison tables and statistical analysis
-- Profiled performance across ten diverse workloads
-- Optimized experiment execution and result collection
+- Wrote the demo walkthrough script and guide
+- Built the readable results report, presentation and result screenshots
+- Rewrote the README for submission
+- Prepared the Phase I submission package and quick start guide
 
 **Key Artifacts:**
-- `scripts/run_experiments.py`
-- `scripts/analyze_experiments.py`
-- `reports/accuracy.csv`
-- Metric calculation and profiling infrastructure
+- `docs/demo.md`, `scripts/demo.py`
+- `scripts/build_readable_report.py`, `scripts/presentation.py`, `reports/results.html`
+- `output/playwright/results-desktop.png`, `output/playwright/results-mobile.png`
+- `README.md`, `README_PHASE1.md`, `SUBMISSION.md`
 
-**Commits:** 4 (Analysis focus)
+**Commits:** 4
 
 ---
 
-## Krishnadevan (Documentation & Research)
+## Krishnadevan (Documentation and Research)
 
-**Role:** IEEE report authoring, literature review, technical documentation
+**Role:** Workloads, experiments, analysis, diagrams and technical report
 
 **Contributions:**
-- Authored IEEE-format Phase I project report
-- Conducted comprehensive literature review
-- Compiled and formatted technical references
-- Created demo guide and documentation structure
-- Wrote abstract, proposed solution, and results sections
-- Compiled individual contributions documentation
+- Wrote the branch trace generator and the workload traces
+- Wrote the experiment runner and collected the raw results
+- Built the experiment analysis pipeline and result figures (accuracy, CPI)
+- Wrote the technical report builder and this contributions document
+- Added the architecture and behaviour diagrams to the report figures
 
 **Key Artifacts:**
-- `PHASE1_REPORT.md` (IEEE-format report)
-- Literature review and references
-- Documentation guides
+- `scripts/generate_traces.py`, `traces/`
+- `scripts/run_experiments.py`, `reports/raw/`
+- `scripts/analyze_experiments.py`, `reports/accuracy.csv`, `reports/figures/`
+- `reports/figures/datapath_microarchitecture.png`, `reports/figures/pipeline_recovery_integration.png`
+- `reports/figures/bht_1bit_state_transitions.png`, `reports/figures/loop_exit_comparison.png`
+- `scripts/build_report.py`, `reports/technical_report.md`
+- `CONTRIBUTIONS.md`
 
-**Commits:** 3 (Documentation focus)
+**Commits:** 5
 
 ---
 
@@ -124,54 +124,13 @@
 
 | Member | Role | Commits | Focus Area |
 |--------|------|---------|-----------|
-| Hemanth | Lead Architect | 6 | RTL Design, Core Logic |
-| Arina | Hardware Integration | 5 | Synthesis, Timing, FPGA |
-| Aaloke | Verification | 4 | Testing, Validation |
-| Manan | Analysis | 4 | Experiments, Metrics |
-| Krishnadevan | Documentation | 3 | Report, References |
-| **Total** | | **22** | Distributed across team |
+| Hemanth | Lead Architect | 4 | Core RTL, architecture, reference model |
+| Aaloke | Verification | 4 | Testbenches, validation, waveforms |
+| Arina | Hardware Integration | 4 | BTB, synthesis, timing, Phase I report |
+| Manan | Analysis and Optimization | 4 | Demo, results report, README, submission |
+| Krishnadevan | Documentation and Research | 5 | Traces, experiments, analysis, diagrams, technical report |
+| **Total** | | **21** | |
 
 ---
 
-## Collaboration & Code Review
-
-- Weekly integration testing to ensure compatibility
-- Cross-team validation of interfaces
-- Shared Git workflow with meaningful commit messages
-- Documentation reviewed for technical accuracy
-- All RTL verified against Python reference model
-- Synthesis validated on iCE40 HX8K target
-
----
-
-## Deliverables Summary
-
-### Phase I (Due November 16, 2026)
-
-✅ **IEEE Project Report** (10 marks)
-- Abstract, Literature Review, Proposed Solution
-- Individual Contributions, Results & Discussion, References
-- Lead: Krishnadevan with Hemanth review
-
-✅ **Prototype Video** (15 marks)
-- 5-minute demonstration of working prototype
-- All 5 members introduced by name
-- RTL results, waveforms, and performance metrics
-- Lead: Aaloke with team support
-
-✅ **GitHub Repository** (5 marks)
-- All implementation files and testbenches
-- Project report and documentation
-- Version history with individual contributions
-- All artifacts and results
-
-### Quality Metrics
-- 90 directed unit tests: **PASSING**
-- 7,248 RTL/oracle comparisons: **MATCHING**
-- FPGA synthesis: **TIMING CLOSURE VERIFIED**
-- Documentation: **COMPLETE**
-
----
-
-**Report Date:** November 10, 2026  
 **Team Lead:** Hemanth Tenneti
