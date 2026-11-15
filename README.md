@@ -11,7 +11,7 @@ interface. No complete CPU or physical FPGA is required to run the experiments.
 
 | Deliverable | Location |
 |---|---|
-| IEEE-style project report (PDF) | [deliverables/Branch_Prediction_Phase_1_Report.pdf](deliverables/Branch_Prediction_Phase_1_Report.pdf) |
+| IEEE-format project report (PDF) | [deliverables/Branch_Prediction_Phase_1_Report.pdf](deliverables/Branch_Prediction_Phase_1_Report.pdf) |
 | Prototype video (Drive folder; see [VIDEO_SUBMISSION.md](deliverables/VIDEO_SUBMISSION.md)) | [Open the video folder](https://drive.google.com/drive/folders/1OKuLjbAmSHSGWa2SKisGPkX1qjneohVG?usp=drive_link) |
 | Prototype files | `rtl/`, `tb/`, `synth/`, `scripts/`, `traces/`, `reports/` |
 | Individual contributions | Section 5 of the report; per-author history via `git log` |
