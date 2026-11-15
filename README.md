@@ -1,8 +1,22 @@
 # Dynamic Branch Prediction Unit
 
+> ## 🎥 [**Watch the Prototype Video (Google Drive folder)**](https://drive.google.com/drive/folders/1OKuLjbAmSHSGWa2SKisGPkX1qjneohVG?usp=drive_link)
+> 📄 [Project report (PDF)](report/Branch_Prediction_Phase_1_Report.pdf)
+
 A standalone Verilog implementation of MCA Project 5: always-not-taken, 1-bit,
 and 2-bit branch prediction, a tagged branch target buffer, and a flush/redirect
 interface. No complete CPU or physical FPGA is required to run the experiments.
+
+## Phase I submission
+
+| Deliverable | Location |
+|---|---|
+| IEEE-style project report (PDF) | [report/Branch_Prediction_Phase_1_Report.pdf](report/Branch_Prediction_Phase_1_Report.pdf) |
+| Prototype video (Drive folder) | [Open the video folder](https://drive.google.com/drive/folders/1OKuLjbAmSHSGWa2SKisGPkX1qjneohVG?usp=drive_link) |
+| Prototype files | `rtl/`, `tb/`, `synth/`, `scripts/`, `traces/`, `reports/` |
+| Individual contributions | Section 5 of the report; per-author history via `git log` |
+
+**Team:** Hemanth Tenneti, Aaloke Eppalapalli, Arina Ali, Manan Bansal, Krishnadevan Manju Liby.
 
 **Start here:** [visual results](reports/results.html),
 [project guide PDF](output/pdf/project_guide.pdf), [editable project guide](docs/project_guide.docx).
