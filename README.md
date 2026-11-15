@@ -1,7 +1,7 @@
 # Dynamic Branch Prediction Unit
 
-> ## 🎥 [**Watch the Prototype Video (Google Drive folder)**](https://drive.google.com/drive/folders/1OKuLjbAmSHSGWa2SKisGPkX1qjneohVG?usp=drive_link)
-> 📄 [Project report (PDF)](report/Branch_Prediction_Phase_1_Report.pdf)
+> ## [**Watch the Prototype Video (Google Drive folder)**](https://drive.google.com/drive/folders/1OKuLjbAmSHSGWa2SKisGPkX1qjneohVG?usp=drive_link)
+> ## [**Read the Project Report (PDF)**](report/Branch_Prediction_Phase_1_Report.pdf)
 
 A standalone Verilog implementation of MCA Project 5: always-not-taken, 1-bit,
 and 2-bit branch prediction, a tagged branch target buffer, and a flush/redirect
